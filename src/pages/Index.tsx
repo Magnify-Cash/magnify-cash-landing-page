@@ -25,8 +25,8 @@ const Index = () => {
               Secure, gas-free loans for everyone. Verified with Worldcoin.
             </p>
             <div className="flex justify-center gap-4">
-              <button className="px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors">
-                Start Lending Today
+              <button disabled className="px-6 py-3 bg-gray-400 text-white rounded-full cursor-not-allowed">
+                Coming Soon
               </button>
               <button className="px-6 py-3 glass rounded-full hover:bg-white/20 transition-colors flex items-center gap-2">
                 Learn More <ArrowRight className="w-4 h-4" />
