@@ -25,11 +25,11 @@ const Index = () => {
               Secure, gas-free loans for everyone. Verified with Worldcoin.
             </p>
             <div className="flex justify-center gap-4">
-              <button disabled className="px-6 py-3 bg-gray-400 text-white rounded-full cursor-not-allowed">
-                Coming Soon
+              <button className="px-6 py-3 bg-accent text-primary rounded-full hover:bg-accent/90 transition-colors flex items-center gap-2">
+                Start Borrowing Now <ArrowRight className="w-4 h-4" />
               </button>
-              <button className="px-6 py-3 glass rounded-full hover:bg-white/20 transition-colors flex items-center gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
+              <button disabled className="px-6 py-3 bg-gray-400 text-white rounded-full cursor-not-allowed">
+                Lend Now (Coming Soon)
               </button>
             </div>
           </div>
