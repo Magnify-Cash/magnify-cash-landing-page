@@ -17,7 +17,7 @@ const Hero = () => {
             Secure, gas-free loans for everyone. Verified with Worldcoin.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="px-8 py-4 bg-accent text-primary rounded-full font-semibold hover:bg-accent/90 transition-colors flex items-center justify-center gap-2">
+            <button className="px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-full font-semibold hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
               Start Borrowing Now <ArrowRight className="w-4 h-4" />
             </button>
             <button disabled className="px-8 py-4 bg-gray-100 text-gray-400 rounded-full font-semibold cursor-not-allowed">
