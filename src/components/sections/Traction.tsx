@@ -8,7 +8,7 @@ const Traction = () => {
             Since launching, Magnify Cash has already made waves in the micro-lending space
           </p>
         </div>
-        <div className="grid md:grid-cols-4 gap-8 animate-fade-in">
+        <div className="grid md:grid-cols-4 gap-8">
           {[
             {
               metric: "1,000+",
@@ -33,9 +33,10 @@ const Traction = () => {
           ].map((stat, index) => (
             <div 
               key={index} 
-              className="p-6 rounded-2xl bg-white border border-border hover:border-accent transition-colors text-center"
+              className="p-6 rounded-2xl bg-white border border-border hover:border-accent transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in group"
+              style={{ animationDelay: `${index * 200}ms` }}
             >
-              <div className="text-4xl font-bold text-primary mb-2 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
+              <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent group-hover:animate-pulse">
                 {stat.metric}
               </div>
               <div className="font-semibold text-primary mb-1">{stat.label}</div>
