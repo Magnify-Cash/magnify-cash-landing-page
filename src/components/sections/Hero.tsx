@@ -31,8 +31,8 @@ const Hero = () => {
         <div className="relative mt-16">
           <div className="flex justify-center animate-float">
             <img
-              src="https://antimetal.com/images/hero/preview.png"
-              alt="Magnify Cash App Preview"
+              src="/lovable-uploads/5b500459-388e-4e0b-b627-375467e569aa.png"
+              alt="Magnify Cash Dashboard Preview"
               className="rounded-3xl shadow-2xl max-w-[90%] w-auto h-auto hover:scale-105 transition-transform duration-500"
             />
           </div>
