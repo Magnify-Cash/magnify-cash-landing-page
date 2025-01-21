@@ -4,23 +4,27 @@ import { Coins, Wallet, PiggyBank, Bot } from "lucide-react";
 const Ecosystem = () => {
   const ecosystemCards = [
     {
-      title: "Magnify Token and Staking Information",
+      title: "MAG Token & Staking",
+      description: "Participate in governance and earn rewards through our native token ecosystem",
       icon: <Coins className="w-8 h-8 text-blue-600" />,
       disabled: false
     },
     {
-      title: "Magnify WorldCoin App Borrow",
+      title: "WorldID-Verified Borrowing",
+      description: "Quick, secure loans backed by your WorldID verification",
       icon: <Wallet className="w-8 h-8 text-pink-600" />,
       disabled: false
     },
     {
-      title: "Magnify WorldCoin App Lend",
+      title: "Decentralized Lending Pool",
+      description: "Provide liquidity and earn competitive yields",
       icon: <PiggyBank className="w-8 h-8 text-gray-400" />,
       disabled: true,
       comingSoon: true
     },
     {
-      title: "Magnify AI Agent",
+      title: "AI Risk Assessment",
+      description: "Advanced borrower analysis and risk management",
       icon: <Bot className="w-8 h-8 text-gray-400" />,
       disabled: true,
       comingSoon: true
@@ -30,9 +34,12 @@ const Ecosystem = () => {
   return (
     <section id="ecosystem" className="py-32 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
-          Magnify Ecosystem
+        <h2 className="text-4xl font-bold text-center mb-6 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
+          Product Ecosystem
         </h2>
+        <p className="text-center text-secondary text-lg mb-16 max-w-2xl mx-auto">
+          A comprehensive suite of products designed to revolutionize micro-lending through blockchain technology and identity verification.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {ecosystemCards.map((card, index) => (
             <Card 
@@ -53,6 +60,7 @@ const Ecosystem = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
+                <p className="text-center text-secondary mb-4">{card.description}</p>
                 <div className="h-2 w-full bg-gradient-to-r from-blue-600 to-pink-600 rounded-full opacity-20" />
               </CardContent>
             </Card>
