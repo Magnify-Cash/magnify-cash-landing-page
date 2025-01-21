@@ -21,36 +21,36 @@ export default {
       colors: {
         primary: {
           DEFAULT: "#141413",
-          dark: "#1A1F2C",
+          dark: "#0F1115",
         },
         secondary: {
           DEFAULT: "#828179",
-          dark: "#8E9196",
+          dark: "#9BA1A6",
         },
         accent: "#C7FB76",
         background: {
           DEFAULT: "#FAFAF8",
-          dark: "#221F26",
+          dark: "#111111",
         },
         surface: {
           DEFAULT: "#fff",
-          dark: "#2A2D3D",
+          dark: "#1A1A1A",
         },
         muted: {
           DEFAULT: "#C4C3BB",
-          dark: "#6E59A5",
+          dark: "#2A2A2A",
         },
         "muted-foreground": {
           DEFAULT: "#A3A299",
-          dark: "#C8C8C9",
+          dark: "#888888",
         },
         border: {
           DEFAULT: "#E6E4DD",
-          dark: "#403E43",
+          dark: "#222222",
         },
         input: {
           DEFAULT: "#F0EFEA",
-          dark: "#333333",
+          dark: "#1A1A1A",
         },
         foreground: "hsl(var(--foreground))",
       },
