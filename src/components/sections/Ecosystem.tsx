@@ -28,8 +28,8 @@ const Ecosystem = () => {
   ];
 
   return (
-    <section id="ecosystem" className="py-24 bg-gradient-to-b from-background to-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="ecosystem" className="py-32 px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
           Magnify Ecosystem
         </h2>
@@ -37,7 +37,7 @@ const Ecosystem = () => {
           {ecosystemCards.map((card, index) => (
             <Card 
               key={index}
-              className={`transition-all duration-300 hover:shadow-lg ${
+              className={`transition-all duration-300 hover:shadow-xl backdrop-blur-sm bg-white/50 ${
                 card.disabled ? 'opacity-50' : 'hover:scale-105'
               }`}
             >

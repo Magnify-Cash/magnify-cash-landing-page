@@ -1,10 +1,10 @@
 const Traction = () => {
   return (
-    <section className="py-24 bg-white px-6 lg:px-8">
+    <section className="py-32 px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Early Success Driving Global Impact</h2>
-          <p className="text-secondary max-w-2xl mx-auto">
+          <h2 className="text-4xl font-bold mb-6">Early Success Driving Global Impact</h2>
+          <p className="text-secondary max-w-2xl mx-auto text-lg">
             Ranked #78 out of 886 World ID apps with rapid user growth and engagement
           </p>
         </div>
@@ -33,14 +33,14 @@ const Traction = () => {
           ].map((stat, index) => (
             <div 
               key={index} 
-              className="p-6 rounded-2xl bg-white border border-border hover:border-accent transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in group"
+              className="p-8 rounded-2xl bg-white/50 backdrop-blur-sm border border-border shadow-lg hover:border-accent transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in group"
               style={{ animationDelay: `${index * 200}ms` }}
             >
-              <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent group-hover:animate-pulse">
+              <div className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent group-hover:animate-pulse">
                 {stat.metric}
               </div>
-              <div className="font-semibold text-primary mb-1">{stat.label}</div>
-              <div className="text-sm text-secondary">{stat.subtext}</div>
+              <div className="font-semibold text-primary mb-2 text-lg">{stat.label}</div>
+              <div className="text-secondary">{stat.subtext}</div>
             </div>
           ))}
         </div>
@@ -65,14 +65,14 @@ const Traction = () => {
           ].map((stat, index) => (
             <div 
               key={`loan-${index}`}
-              className="p-6 rounded-2xl bg-white border border-border hover:border-accent transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in group"
+              className="p-8 rounded-2xl bg-white/50 backdrop-blur-sm border border-border shadow-lg hover:border-accent transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in group"
               style={{ animationDelay: `${(index + 4) * 200}ms` }}
             >
-              <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent group-hover:animate-pulse">
+              <div className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent group-hover:animate-pulse">
                 {stat.metric}
               </div>
-              <div className="font-semibold text-primary mb-1">{stat.label}</div>
-              <div className="text-sm text-secondary">{stat.subtext}</div>
+              <div className="font-semibold text-primary mb-2 text-lg">{stat.label}</div>
+              <div className="text-secondary">{stat.subtext}</div>
             </div>
           ))}
         </div>

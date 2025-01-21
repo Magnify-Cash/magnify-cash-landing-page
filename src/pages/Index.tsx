@@ -10,15 +10,21 @@ import CallToAction from "@/components/sections/CallToAction";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-gradient-to-b from-background via-white to-background">
       <Navigation />
       <main className="pt-16">
         <Hero />
-        <Traction />
-        <Problem />
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-50/30 to-transparent" />
+          <Problem />
+          <Traction />
+        </div>
         <Features />
-        <Ecosystem />
-        <Roadmap />
+        <div className="relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-pink-50/30 to-transparent" />
+          <Ecosystem />
+          <Roadmap />
+        </div>
         <CallToAction />
       </main>
       <Footer />
