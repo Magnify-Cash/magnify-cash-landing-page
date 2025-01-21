@@ -15,7 +15,7 @@ const Index = () => {
       <Navigation />
       <main className="pt-20">
         <Hero />
-        <div className="relative">
+        <div className="relative" id="market-opportunity">
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-50/20 dark:via-blue-950/20 to-transparent" />
           <Problem />
           <div className="py-12">
