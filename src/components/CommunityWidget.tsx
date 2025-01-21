@@ -20,7 +20,7 @@ const CommunityWidget = () => {
             <h4 className="font-semibold text-lg">Connect with us!</h4>
             <div className="space-y-2">
               <a
-                href="https://t.me/magnifycash"
+                href="https://t.me/magnifycommunity"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block p-3 bg-blue-50 hover:bg-blue-100 rounded-lg transition-colors"
