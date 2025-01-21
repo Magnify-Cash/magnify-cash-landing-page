@@ -16,7 +16,7 @@ const Navigation = () => {
           <img 
             src="/lovable-uploads/de5d4a5d-e923-4a4b-b925-1110eb80251f.png" 
             alt="Magnify Cash Logo" 
-            className="h-10 w-10"
+            className="h-10 w-10 rounded-[20%]"
           />
           <span className="text-2xl font-semibold">Magnify Cash</span>
         </Link>
