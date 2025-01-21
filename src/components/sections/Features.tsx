@@ -2,8 +2,8 @@ const Features = () => {
   return (
     <section id="features" className="py-32 px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-4xl font-bold text-center mb-6">How Borrowing Works</h2>
-        <p className="text-secondary text-center mb-16 max-w-2xl mx-auto text-lg">
+        <h2 className="text-4xl font-bold text-center mb-6 animate-fade-in">How Borrowing Works</h2>
+        <p className="text-secondary text-center mb-16 max-w-2xl mx-auto text-lg animate-fade-in [animation-delay:200ms]">
           Magnify Cash is a revolutionary micro-lending platform offering identity-backed, gas-free loans through your Worldcoin account.
         </p>
         <div className="grid md:grid-cols-4 gap-8">
@@ -31,7 +31,7 @@ const Features = () => {
           ].map((step, index) => (
             <div
               key={index}
-              className="p-8 rounded-2xl bg-white/50 backdrop-blur-sm border border-border shadow-lg hover:border-accent transition-all duration-300 hover:scale-105 group"
+              className="p-8 rounded-2xl bg-white/50 backdrop-blur-sm border border-border shadow-lg hover:border-accent transition-all duration-300 hover:scale-105 group animate-fade-in"
               style={{ animationDelay: `${index * 200}ms` }}
             >
               <div className="text-6xl mb-6 group-hover:animate-bounce">{step.icon}</div>

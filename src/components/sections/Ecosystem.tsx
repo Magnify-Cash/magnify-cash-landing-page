@@ -34,26 +34,27 @@ const Ecosystem = () => {
   return (
     <section id="ecosystem" className="py-32 px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-6 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold text-center mb-6 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
           Product Ecosystem
         </h2>
-        <p className="text-center text-secondary text-lg mb-16 max-w-2xl mx-auto">
+        <p className="text-center text-secondary text-lg mb-16 max-w-2xl mx-auto animate-fade-in [animation-delay:200ms]">
           A comprehensive suite of products designed to revolutionize micro-lending through blockchain technology and identity verification.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {ecosystemCards.map((card, index) => (
             <Card 
               key={index}
-              className={`transition-all duration-300 hover:shadow-xl backdrop-blur-sm bg-white/50 ${
+              className={`transition-all duration-300 hover:shadow-xl backdrop-blur-sm bg-white/50 animate-fade-in ${
                 card.disabled ? 'opacity-50' : 'hover:scale-105'
               }`}
+              style={{ animationDelay: `${index * 200}ms` }}
             >
               <CardHeader className="space-y-4">
-                <div className="flex justify-center">{card.icon}</div>
+                <div className="flex justify-center group-hover:animate-bounce">{card.icon}</div>
                 <CardTitle className="text-center text-lg">
                   {card.title}
                   {card.comingSoon && (
-                    <span className="block text-sm text-gray-400 mt-1">
+                    <span className="block text-sm text-gray-400 mt-1 animate-pulse">
                       Coming Soon
                     </span>
                   )}
@@ -61,7 +62,7 @@ const Ecosystem = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-center text-secondary mb-4">{card.description}</p>
-                <div className="h-2 w-full bg-gradient-to-r from-blue-600 to-pink-600 rounded-full opacity-20" />
+                <div className="h-2 w-full bg-gradient-to-r from-blue-600 to-pink-600 rounded-full opacity-20 group-hover:opacity-40 transition-opacity" />
               </CardContent>
             </Card>
           ))}
