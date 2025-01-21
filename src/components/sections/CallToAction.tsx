@@ -13,7 +13,7 @@ const CallToAction = () => {
             Get Started Now
           </a>
           <button className="px-8 py-4 glass rounded-full font-semibold hover:bg-white/20 transition-colors">
-            Download the App
+            Download the WorldCoin App
           </button>
         </div>
         <form className="mt-6">
