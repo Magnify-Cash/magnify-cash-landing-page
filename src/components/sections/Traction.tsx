@@ -8,7 +8,7 @@ const Traction = () => {
             Ranked #78 out of 886 World ID apps with rapid user growth and engagement
           </p>
         </div>
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-4 gap-8 mb-16">
           {[
             {
               metric: "361K+",
@@ -35,6 +35,38 @@ const Traction = () => {
               key={index} 
               className="p-6 rounded-2xl bg-white border border-border hover:border-accent transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in group"
               style={{ animationDelay: `${index * 200}ms` }}
+            >
+              <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent group-hover:animate-pulse">
+                {stat.metric}
+              </div>
+              <div className="font-semibold text-primary mb-1">{stat.label}</div>
+              <div className="text-sm text-secondary">{stat.subtext}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {[
+            {
+              metric: "$2.1M+",
+              label: "Total Loan Volume",
+              subtext: "across all markets",
+            },
+            {
+              metric: "3,450",
+              label: "Active Loans",
+              subtext: "98% repayment rate",
+            },
+            {
+              metric: "$612",
+              label: "Average Loan Size",
+              subtext: "ranging from $100-2,000",
+            },
+          ].map((stat, index) => (
+            <div 
+              key={`loan-${index}`}
+              className="p-6 rounded-2xl bg-white border border-border hover:border-accent transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in group"
+              style={{ animationDelay: `${(index + 4) * 200}ms` }}
             >
               <div className="text-4xl font-bold mb-2 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent group-hover:animate-pulse">
                 {stat.metric}
