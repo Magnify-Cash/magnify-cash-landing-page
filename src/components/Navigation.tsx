@@ -20,6 +20,7 @@ const Navigation = () => {
           {[
             { label: "Features", path: "features" },
             { label: "Roadmap", path: "roadmap" },
+            { label: "Ecosystem", path: "ecosystem" },
             { label: "How it Works", path: "how-it-works" }
           ].map((item) => (
             <button

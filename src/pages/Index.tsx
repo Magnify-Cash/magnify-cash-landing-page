@@ -5,6 +5,7 @@ import Traction from "@/components/sections/Traction";
 import Problem from "@/components/sections/Problem";
 import Features from "@/components/sections/Features";
 import Roadmap from "@/components/sections/Roadmap";
+import Ecosystem from "@/components/sections/Ecosystem";
 import CallToAction from "@/components/sections/CallToAction";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
         <Problem />
         <Features />
         <Roadmap />
+        <Ecosystem />
         <CallToAction />
       </main>
       <Footer />
