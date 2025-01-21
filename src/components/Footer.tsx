@@ -51,7 +51,7 @@ const Footer = () => {
             <Link to="https://x.com/magnifycash" className="text-white/70 hover:text-white transition-colors">
               X.com
             </Link>
-            <Link to="#" className="text-white/70 hover:text-white transition-colors">
+            <Link to="https://www.linkedin.com/company/magnifylabs/" className="text-white/70 hover:text-white transition-colors">
               LinkedIn
             </Link>
             <Link to="https://github.com/magnify-cash" className="text-white/70 hover:text-white transition-colors">
