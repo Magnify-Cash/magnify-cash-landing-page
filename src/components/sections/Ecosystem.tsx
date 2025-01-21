@@ -16,8 +16,8 @@ const Ecosystem = () => {
       disabled: false
     },
     {
-      title: "Decentralized Lending Pool",
-      description: "Provide liquidity and earn competitive yields",
+      title: "Shared Lending Pool",
+      description: "Earn yield by providing liquidity to micro-loans backed by World ID",
       icon: <PiggyBank className="w-8 h-8 text-gray-400" />,
       disabled: true,
       comingSoon: true
