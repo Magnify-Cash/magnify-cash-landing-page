@@ -22,7 +22,7 @@ export default {
           DEFAULT: "#141413",
         },
         secondary: {
-          DEFAULT: "#828179",
+          DEFAULT: "#4A4945",
         },
         accent: "#C7FB76",
         background: {
@@ -32,10 +32,10 @@ export default {
           DEFAULT: "#fff",
         },
         muted: {
-          DEFAULT: "#C4C3BB",
+          DEFAULT: "#6E6D67",
         },
         "muted-foreground": {
-          DEFAULT: "#A3A299",
+          DEFAULT: "#4A4945",
         },
         border: {
           DEFAULT: "#E6E4DD",
@@ -43,13 +43,23 @@ export default {
         input: {
           DEFAULT: "#F0EFEA",
         },
-        foreground: "hsl(var(--foreground))",
+        foreground: "#222222",
       },
       textColor: {
-        foreground: "hsl(var(--foreground))",
+        foreground: "#222222",
       },
       fontFamily: {
         sans: ["SF Pro Display", "system-ui", "sans-serif"],
+      },
+      fontSize: {
+        'display': ['4.5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],
+        'h1': ['3.75rem', { lineHeight: '1.2', letterSpacing: '-0.02em' }],
+        'h2': ['2.5rem', { lineHeight: '1.3', letterSpacing: '-0.01em' }],
+        'h3': ['2rem', { lineHeight: '1.4', letterSpacing: '-0.01em' }],
+        'h4': ['1.5rem', { lineHeight: '1.4' }],
+        'body-lg': ['1.125rem', { lineHeight: '1.6' }],
+        'body': ['1rem', { lineHeight: '1.6' }],
+        'small': ['0.875rem', { lineHeight: '1.5' }],
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",

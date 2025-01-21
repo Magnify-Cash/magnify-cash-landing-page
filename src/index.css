@@ -31,8 +31,28 @@
   }
 
   body {
-    @apply bg-white text-foreground antialiased;
+    @apply bg-white text-foreground antialiased leading-relaxed;
     font-feature-settings: "ss01" on, "ss02" on, "cv01" on, "cv02" on;
+  }
+
+  h1 {
+    @apply text-h1 font-bold tracking-tight text-primary;
+  }
+
+  h2 {
+    @apply text-h2 font-bold tracking-tight text-primary;
+  }
+
+  h3 {
+    @apply text-h3 font-semibold text-primary;
+  }
+
+  h4 {
+    @apply text-h4 font-semibold text-primary;
+  }
+
+  p {
+    @apply text-body-lg text-secondary;
   }
 
   @keyframes gradient {

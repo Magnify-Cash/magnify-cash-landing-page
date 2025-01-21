@@ -6,14 +6,14 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-pink-100 opacity-20 animate-gradient" />
       <div className="mx-auto max-w-7xl text-center relative">
         <div className="animate-fade-in [animation-delay:200ms]">
-          <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-primary mb-6">
+          <h1 className="text-display font-bold tracking-tight text-primary mb-6">
             Transforming Global Finance
             <br />
             <span className="bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
               Through Identity-Verified Lending
             </span>
           </h1>
-          <p className="mx-auto max-w-2xl text-lg text-secondary mb-8 animate-fade-in [animation-delay:400ms]">
+          <p className="mx-auto max-w-2xl text-body-lg text-secondary mb-8 leading-relaxed animate-fade-in [animation-delay:400ms]">
             Magnify Cash is revolutionizing micro-lending by combining WorldID verification with gas-free transactions, making loans accessible to billions globally.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in [animation-delay:600ms]">
@@ -25,7 +25,9 @@ const Hero = () => {
               Become a Lender (Coming Soon)
             </button>
           </div>
-          <p className="mt-6 text-sm text-secondary animate-fade-in [animation-delay:800ms]">Backed by Industry Leaders in Web3 and DeFi</p>
+          <p className="mt-6 text-small text-muted animate-fade-in [animation-delay:800ms]">
+            Backed by Industry Leaders in Web3 and DeFi
+          </p>
         </div>
 
         <div className="relative mt-16 w-full max-w-[1200px] mx-auto">
