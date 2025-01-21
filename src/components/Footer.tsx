@@ -20,9 +20,6 @@ const Footer = () => {
               <Link to="/faq" className="text-white/90 hover:text-white transition-colors">
                 FAQ
               </Link>
-              <Link to="/contact" className="text-white/90 hover:text-white transition-colors">
-                Contact Us
-              </Link>
             </div>
           </div>
           <div className="space-y-8">
