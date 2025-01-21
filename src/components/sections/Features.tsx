@@ -1,6 +1,6 @@
 const Features = () => {
   return (
-    <section className="py-24 px-6 lg:px-8">
+    <section id="how-it-works" className="py-24 px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <h2 className="text-3xl font-bold text-center mb-4">How Borrowing Works</h2>
         <p className="text-secondary text-center mb-16 max-w-2xl mx-auto">

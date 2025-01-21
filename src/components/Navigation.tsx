@@ -2,6 +2,13 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -10,15 +17,19 @@ const Navigation = () => {
         </Link>
         
         <div className="hidden md:flex items-center space-x-8">
-          {["Features", "Pricing", "About"].map((item, index) => (
-            <Link
-              key={item}
-              to={`/${item.toLowerCase()}`}
-              className="text-secondary hover:text-primary transition-colors relative group"
+          {[
+            { label: "Features", path: "features" },
+            { label: "Pricing", path: "pricing" },
+            { label: "How it Works", path: "how-it-works" }
+          ].map((item) => (
+            <button
+              key={item.label}
+              onClick={() => scrollToSection(item.path)}
+              className="text-secondary hover:text-primary transition-colors relative group cursor-pointer"
             >
-              {item}
+              {item.label}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
-            </Link>
+            </button>
           ))}
         </div>
 
