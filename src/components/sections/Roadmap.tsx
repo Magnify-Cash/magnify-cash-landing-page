@@ -23,7 +23,7 @@ const Roadmap = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-white to-background px-6 lg:px-8">
+    <section id="roadmap" className="py-24 bg-gradient-to-b from-white to-background px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent">
           Our Vision for Scaling Financial Inclusion
