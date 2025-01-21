@@ -19,7 +19,7 @@ const Navigation = () => {
         <div className="hidden md:flex items-center space-x-8">
           {[
             { label: "Features", path: "features" },
-            { label: "Pricing", path: "pricing" },
+            { label: "Roadmap", path: "roadmap" },
             { label: "How it Works", path: "how-it-works" }
           ].map((item) => (
             <button
