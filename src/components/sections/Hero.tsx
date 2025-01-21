@@ -29,13 +29,14 @@ const Hero = () => {
         </div>
 
         <div className="relative mt-16 w-full max-w-[1200px] mx-auto">
-          <div className="flex justify-center animate-float">
-            <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl group">
+          <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-pink-100 opacity-20 animate-gradient rounded-3xl" />
+          <div className="relative animate-float">
+            <div className="relative overflow-hidden rounded-3xl shadow-2xl group">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <img
                 src="/lovable-uploads/5b500459-388e-4e0b-b627-375467e569aa.png"
                 alt="Magnify Cash Dashboard Preview"
-                className="w-full h-auto transform transition-transform duration-700 ease-out group-hover:scale-102"
+                className="w-full h-full object-cover transform transition-transform duration-700 ease-out group-hover:scale-105"
               />
             </div>
           </div>
