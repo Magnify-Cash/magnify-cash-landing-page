@@ -25,8 +25,8 @@ const Navigation = () => {
           {[
             { label: "Features", path: "features" },
             { label: "Market Opportunity", path: "market-opportunity" },
-            { label: "Roadmap", path: "roadmap" },
             { label: "Ecosystem", path: "ecosystem" },
+            { label: "Roadmap", path: "roadmap" },
             { label: "How Borrowing Works", path: "features" }
           ].map((item) => (
             <button
