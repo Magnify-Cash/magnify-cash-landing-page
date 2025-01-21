@@ -41,9 +41,15 @@ const Navigation = () => {
         </div>
 
         <div className="flex items-center space-x-6">
-          <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity hover:scale-105 px-8 py-6 text-lg font-semibold">
-            Get Started
-          </Button>
+          <a
+            href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity hover:scale-105 px-8 py-6 text-lg font-semibold">
+              Get Started
+            </Button>
+          </a>
         </div>
       </div>
     </nav>
