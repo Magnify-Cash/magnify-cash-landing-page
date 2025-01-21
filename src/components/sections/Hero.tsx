@@ -14,9 +14,14 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       <div className="mx-auto max-w-7xl text-center relative">
         <div className="animate-fade-in [animation-delay:200ms]">
-          <span className="inline-flex items-center rounded-full px-4 py-1 text-sm font-medium bg-blue-100 text-blue-800 mb-6 animate-fade-in">
-            🚀 Now Live on CoinGecko
-          </span>
+          <a
+            href="https://x.com/MagnifyCash/status/1879038868550459876"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center rounded-full px-4 py-1 text-sm font-medium bg-blue-100 text-blue-800 mb-6 animate-fade-in hover:bg-blue-200 transition-colors"
+          >
+            🚀 Now Live on World App Store
+          </a>
           <h1 className="text-display font-bold tracking-tight text-primary mb-6">
             Transforming Global Finance
             <br />
