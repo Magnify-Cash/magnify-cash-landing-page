@@ -13,7 +13,7 @@ const CallToAction = () => {
             rel="noopener noreferrer" 
             className="px-8 py-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-full font-semibold hover:opacity-90 transition-all hover:scale-105 animate-pulse"
           >
-            Get Started with WorldID
+            Get started
           </a>
           <button className="px-8 py-4 glass rounded-full font-semibold hover:bg-white/20 transition-all hover:scale-105">
             Join Our Community
