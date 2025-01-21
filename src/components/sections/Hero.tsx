@@ -28,13 +28,16 @@ const Hero = () => {
           <p className="mt-6 text-sm text-secondary animate-fade-in [animation-delay:800ms]">Backed by Visionary Supporters</p>
         </div>
 
-        <div className="relative mt-16">
+        <div className="relative mt-16 w-full max-w-[1200px] mx-auto">
           <div className="flex justify-center animate-float">
-            <img
-              src="/lovable-uploads/5b500459-388e-4e0b-b627-375467e569aa.png"
-              alt="Magnify Cash Dashboard Preview"
-              className="rounded-3xl shadow-2xl max-w-[90%] w-auto h-auto hover:scale-105 transition-transform duration-500"
-            />
+            <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl group">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <img
+                src="/lovable-uploads/5b500459-388e-4e0b-b627-375467e569aa.png"
+                alt="Magnify Cash Dashboard Preview"
+                className="w-full h-auto transform transition-transform duration-700 ease-out group-hover:scale-102"
+              />
+            </div>
           </div>
         </div>
       </div>
