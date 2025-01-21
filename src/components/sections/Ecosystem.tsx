@@ -4,7 +4,19 @@ import { Coins, Wallet, PiggyBank, Bot } from "lucide-react";
 const Ecosystem = () => {
   const ecosystemCards = [
     {
-      title: "MAG Token & Staking",
+      title: (
+        <>
+          <a 
+            href="https://www.coingecko.com/en/coins/magnify-cash" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            $MAG
+          </a>{' '}
+          Token & Staking
+        </>
+      ),
       description: "Participate in governance and earn rewards through our native token ecosystem",
       icon: <Coins className="w-8 h-8 text-blue-600" />,
       disabled: false

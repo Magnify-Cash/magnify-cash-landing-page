@@ -25,7 +25,20 @@ const Features = () => {
             },
             {
               title: "4. Build Credit",
-              description: "Make timely repayments to increase your borrowing limit and earn $MAG tokens",
+              description: (
+                <>
+                  Make timely repayments to increase your borrowing limit and earn{' '}
+                  <a 
+                    href="https://www.coingecko.com/en/coins/magnify-cash" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    $MAG
+                  </a>{' '}
+                  tokens
+                </>
+              ),
               icon: "⭐",
             },
           ].map((step, index) => (
