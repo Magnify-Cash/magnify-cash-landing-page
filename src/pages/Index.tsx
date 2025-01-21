@@ -7,6 +7,7 @@ import Features from "@/components/sections/Features";
 import Roadmap from "@/components/sections/Roadmap";
 import Ecosystem from "@/components/sections/Ecosystem";
 import CallToAction from "@/components/sections/CallToAction";
+import CommunityWidget from "@/components/CommunityWidget";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
         </div>
         <CallToAction />
       </main>
+      <CommunityWidget />
       <Footer />
     </div>
   );
