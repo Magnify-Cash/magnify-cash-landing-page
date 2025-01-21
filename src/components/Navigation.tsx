@@ -43,7 +43,7 @@ const Navigation = () => {
             { label: "Features", path: "features" },
             { label: "Roadmap", path: "roadmap" },
             { label: "Ecosystem", path: "ecosystem" },
-            { label: "How it Works", path: "how-it-works" }
+            { label: "How Borrowing Works", path: "features" }
           ].map((item) => (
             <button
               key={item.label}
