@@ -12,8 +12,13 @@ const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <Link to="/" className="text-xl font-semibold hover:opacity-80 transition-opacity">
-          Magnify Cash
+        <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+          <img 
+            src="/lovable-uploads/de5d4a5d-e923-4a4b-b925-1110eb80251f.png" 
+            alt="Magnify Cash Logo" 
+            className="h-8 w-8"
+          />
+          <span className="text-xl font-semibold">Magnify Cash</span>
         </Link>
         
         <div className="hidden md:flex items-center space-x-8">
