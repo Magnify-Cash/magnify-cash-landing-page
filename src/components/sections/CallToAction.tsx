@@ -15,9 +15,14 @@ const CallToAction = () => {
           >
             Get started
           </a>
-          <button className="px-8 py-4 glass rounded-full font-semibold hover:bg-white/20 transition-all hover:scale-105">
+          <a 
+            href="https://discord.gg/magnifycash" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="px-8 py-4 glass rounded-full font-semibold hover:bg-white/20 transition-all hover:scale-105"
+          >
             Join Our Community
-          </button>
+          </a>
         </div>
         <form className="mt-8 max-w-md mx-auto animate-fade-in [animation-delay:600ms]">
           <div className="flex">
