@@ -26,16 +26,34 @@ const Navigation = () => {
             { label: "Market Opportunity", path: "market-opportunity" },
             { label: "Ecosystem", path: "ecosystem" },
             { label: "Roadmap", path: "roadmap" },
-            { label: "How Borrowing Works", path: "features" }
+            { label: "How Borrowing Works", path: "features" },
+            { 
+              label: "$MAG", 
+              path: "https://www.coingecko.com/en/coins/magnify-cash",
+              external: true 
+            }
           ].map((item) => (
-            <button
-              key={item.label}
-              onClick={() => scrollToSection(item.path)}
-              className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg"
-            >
-              {item.label}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
-            </button>
+            item.external ? (
+              <a
+                key={item.label}
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg"
+              >
+                {item.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
+              </a>
+            ) : (
+              <button
+                key={item.label}
+                onClick={() => scrollToSection(item.path)}
+                className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg"
+              >
+                {item.label}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
+              </button>
+            )
           ))}
         </div>
 
