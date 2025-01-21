@@ -54,7 +54,7 @@ const Footer = () => {
             <Link to="#" className="text-white/70 hover:text-white transition-colors">
               LinkedIn
             </Link>
-            <Link to="#" className="text-white/70 hover:text-white transition-colors">
+            <Link to="https://github.com/magnify-cash" className="text-white/70 hover:text-white transition-colors">
               GitHub
             </Link>
           </div>
