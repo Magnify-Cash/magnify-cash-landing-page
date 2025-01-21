@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: ["class"],
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -21,36 +20,28 @@ export default {
       colors: {
         primary: {
           DEFAULT: "#141413",
-          dark: "#0F1115",
         },
         secondary: {
           DEFAULT: "#828179",
-          dark: "#9BA1A6",
         },
         accent: "#C7FB76",
         background: {
           DEFAULT: "#FAFAF8",
-          dark: "#111111",
         },
         surface: {
           DEFAULT: "#fff",
-          dark: "#1A1A1A",
         },
         muted: {
           DEFAULT: "#C4C3BB",
-          dark: "#2A2A2A",
         },
         "muted-foreground": {
           DEFAULT: "#A3A299",
-          dark: "#888888",
         },
         border: {
           DEFAULT: "#E6E4DD",
-          dark: "#222222",
         },
         input: {
           DEFAULT: "#F0EFEA",
-          dark: "#1A1A1A",
         },
         foreground: "hsl(var(--foreground))",
       },

@@ -1,23 +1,7 @@
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
-import { Moon, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
 
 const Navigation = () => {
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setIsDark(true);
-      document.documentElement.classList.add('dark');
-    }
-  }, []);
-
-  const toggleDarkMode = () => {
-    setIsDark(!isDark);
-    document.documentElement.classList.toggle('dark');
-  };
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -26,7 +10,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 dark:bg-primary/80 backdrop-blur-xl border-b border-border dark:border-border/20">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
       <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
           <img 
@@ -34,7 +18,7 @@ const Navigation = () => {
             alt="Magnify Cash Logo" 
             className="h-10 w-10"
           />
-          <span className="text-2xl font-semibold dark:text-white">Magnify Cash</span>
+          <span className="text-2xl font-semibold">Magnify Cash</span>
         </Link>
         
         <div className="hidden md:flex items-center space-x-10">
@@ -48,7 +32,7 @@ const Navigation = () => {
             <button
               key={item.label}
               onClick={() => scrollToSection(item.path)}
-              className="text-secondary dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors relative group cursor-pointer text-lg"
+              className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg"
             >
               {item.label}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
@@ -57,18 +41,6 @@ const Navigation = () => {
         </div>
 
         <div className="flex items-center space-x-6">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggleDarkMode}
-            className="mr-2"
-          >
-            {isDark ? (
-              <Sun className="h-5 w-5 text-yellow-500" />
-            ) : (
-              <Moon className="h-5 w-5" />
-            )}
-          </Button>
           <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity hover:scale-105 px-8 py-6 text-lg font-semibold">
             Get Started
           </Button>
