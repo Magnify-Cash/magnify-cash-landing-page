@@ -24,9 +24,9 @@ const Features = () => {
               icon: "💸",
             },
             {
-              title: "4. Manage Repayments",
-              description: "Make flexible repayments through our simple interface",
-              icon: "✅",
+              title: "4. Build Credit",
+              description: "Make timely repayments to increase your borrowing limit",
+              icon: "⭐",
             },
           ].map((step, index) => (
             <div
