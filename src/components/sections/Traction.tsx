@@ -5,30 +5,30 @@ const Traction = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">Early Success Driving Global Impact</h2>
           <p className="text-secondary max-w-2xl mx-auto">
-            Since launching, Magnify Cash has already made waves in the micro-lending space
+            Ranked #78 out of 886 World ID apps with rapid user growth and engagement
           </p>
         </div>
         <div className="grid md:grid-cols-4 gap-8">
           {[
             {
-              metric: "1,000+",
-              label: "Loans Issued",
-              subtext: "in the first week",
+              metric: "361K+",
+              label: "Weekly Impressions",
+              subtext: "3.2% engagement rate",
             },
             {
-              metric: "2,237",
+              metric: "17,150",
+              label: "Active Sessions",
+              subtext: "last 7 days",
+            },
+            {
+              metric: "1,929",
               label: "Verified Users",
-              subtext: "and growing",
+              subtext: "unique identities",
             },
             {
-              metric: "87%",
-              label: "Quick Repayments",
-              subtext: "within days",
-            },
-            {
-              metric: "4.3",
-              label: "Star Rating",
-              subtext: "on Worldcoin",
+              metric: "99.9%",
+              label: "New User Rate",
+              subtext: "2,312 this week",
             },
           ].map((stat, index) => (
             <div 
