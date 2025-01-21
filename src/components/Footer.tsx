@@ -48,8 +48,8 @@ const Footer = () => {
             © 2025 Magnify Cash. All rights reserved.
           </p>
           <div className="flex items-center space-x-6">
-            <Link to="#" className="text-white/70 hover:text-white transition-colors">
-              Twitter
+            <Link to="https://x.com/magnifycash" className="text-white/70 hover:text-white transition-colors">
+              X.com
             </Link>
             <Link to="#" className="text-white/70 hover:text-white transition-colors">
               LinkedIn
