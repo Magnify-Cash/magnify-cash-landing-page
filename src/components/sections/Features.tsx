@@ -25,7 +25,7 @@ const Features = () => {
             },
             {
               title: "4. Build Credit",
-              description: "Make timely repayments to increase your borrowing limit",
+              description: "Make timely repayments to increase your borrowing limit and earn $MAG tokens",
               icon: "⭐",
             },
           ].map((step, index) => (
