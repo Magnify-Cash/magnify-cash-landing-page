@@ -48,19 +48,19 @@ const Traction = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              metric: "$2.1M+",
+              metric: "$7K+",
               label: "Total Loan Volume",
               subtext: "across all markets",
             },
             {
-              metric: "3,450",
-              label: "Active Loans",
+              metric: "1K+",
+              label: "Issued Loans",
               subtext: "98% repayment rate",
             },
             {
-              metric: "$612",
+              metric: "$1-10",
               label: "Average Loan Size",
-              subtext: "ranging from $100-2,000",
+              subtext: "accessible micro-loans",
             },
           ].map((stat, index) => (
             <div 
