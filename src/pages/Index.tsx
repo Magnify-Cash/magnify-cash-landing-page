@@ -17,8 +17,8 @@ const Index = () => {
         <Traction />
         <Problem />
         <Features />
-        <Roadmap />
         <Ecosystem />
+        <Roadmap />
         <CallToAction />
       </main>
       <Footer />
