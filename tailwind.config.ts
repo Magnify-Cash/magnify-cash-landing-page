@@ -19,15 +19,39 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#141413",
-        secondary: "#828179",
+        primary: {
+          DEFAULT: "#141413",
+          dark: "#1A1F2C",
+        },
+        secondary: {
+          DEFAULT: "#828179",
+          dark: "#8E9196",
+        },
         accent: "#C7FB76",
-        background: "#FAFAF8",
-        surface: "#fff",
-        muted: "#C4C3BB",
-        "muted-foreground": "#A3A299",
-        border: "#E6E4DD",
-        input: "#F0EFEA",
+        background: {
+          DEFAULT: "#FAFAF8",
+          dark: "#221F26",
+        },
+        surface: {
+          DEFAULT: "#fff",
+          dark: "#2A2D3D",
+        },
+        muted: {
+          DEFAULT: "#C4C3BB",
+          dark: "#6E59A5",
+        },
+        "muted-foreground": {
+          DEFAULT: "#A3A299",
+          dark: "#C8C8C9",
+        },
+        border: {
+          DEFAULT: "#E6E4DD",
+          dark: "#403E43",
+        },
+        input: {
+          DEFAULT: "#F0EFEA",
+          dark: "#333333",
+        },
         foreground: "hsl(var(--foreground))",
       },
       textColor: {
