@@ -36,23 +36,23 @@
   }
 
   h1 {
-    @apply text-h1 font-bold tracking-tight text-primary;
+    @apply text-3xl sm:text-h1 font-bold tracking-tight text-primary;
   }
 
   h2 {
-    @apply text-h2 font-bold tracking-tight text-primary;
+    @apply text-2xl sm:text-h2 font-bold tracking-tight text-primary;
   }
 
   h3 {
-    @apply text-h3 font-semibold text-primary;
+    @apply text-xl sm:text-h3 font-semibold text-primary;
   }
 
   h4 {
-    @apply text-h4 font-semibold text-primary;
+    @apply text-lg sm:text-h4 font-semibold text-primary;
   }
 
   p {
-    @apply text-body-lg text-secondary;
+    @apply text-base sm:text-body-lg text-secondary;
   }
 
   @keyframes gradient {
