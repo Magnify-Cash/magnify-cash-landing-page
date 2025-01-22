@@ -2,7 +2,7 @@ const CallToAction = () => {
   return (
     <section className="py-16 sm:py-24 bg-black text-white px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl text-center">
-        <h2 className="text-2xl sm:text-4xl font-bold mb-6 animate-fade-in leading-tight">
+        <h2 className="text-2xl sm:text-4xl font-bold mb-6 animate-fade-in leading-tight text-white">
           Be part of a revolutionary platform that's making financial inclusion a reality for billions worldwide.
         </h2>
         <div className="flex flex-col gap-4 animate-fade-in [animation-delay:200ms] max-w-md mx-auto">
