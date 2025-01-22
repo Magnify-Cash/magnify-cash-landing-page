@@ -24,7 +24,7 @@ const Ecosystem = () => {
             href="https://staking.magnify.cash/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:opacity-90 transition-all hover:scale-105 animate-pulse"
           >
             Start staking now →
           </a>
