@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       
       <div className="mx-auto max-w-7xl relative">
-        <div className="flex flex-col items-center space-y-8 max-w-[1200px] mx-auto">
+        <div className="flex flex-col items-center space-y-12 max-w-[1200px] mx-auto">
           {/* Live badge */}
           <div className="animate-fade-in">
             <a
@@ -21,29 +21,25 @@ const Hero = () => {
           </div>
 
           {/* Main heading */}
-          <div className="text-center animate-fade-in [animation-delay:200ms]">
-            <h1 className="text-[2.5rem] sm:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1] mb-8">
-              <span className="inline-block mr-2">Transforming</span>
-              <span className="inline-block mr-2">Global</span>
-              <span className="inline-block mr-2">Finance</span>
-              <span className="inline-block mr-2">Through</span>
+          <div className="text-center max-w-5xl mx-auto animate-fade-in [animation-delay:200ms]">
+            <h1 className="text-[2.5rem] sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.2] mb-6">
+              <span className="inline-block">Transforming Global Finance</span>
+              <br />
+              <span className="inline-block">Through</span>
               <br className="hidden sm:block" />
-              <span className="bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent inline-block mr-2">
-                Identity-Verified
-              </span>
-              <span className="bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent inline-block">
-                Lending
+              <span className="bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent">
+                Identity-Verified Lending
               </span>
             </h1>
           </div>
 
           {/* Description */}
-          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl text-center animate-fade-in [animation-delay:400ms] leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-2xl text-center animate-fade-in [animation-delay:400ms] leading-relaxed px-4">
             Magnify Cash is revolutionizing micro-lending by combining WorldID verification with gas-free transactions, making loans accessible to billions globally.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full max-w-xl mx-auto animate-fade-in [animation-delay:600ms] mt-4">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full max-w-xl mx-auto animate-fade-in [animation-delay:600ms]">
             <a 
               href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
               target="_blank"
@@ -62,7 +58,7 @@ const Hero = () => {
           </div>
 
           {/* Status indicator */}
-          <div className="flex items-center justify-center gap-2 animate-fade-in [animation-delay:800ms] mt-8">
+          <div className="flex items-center justify-center gap-2 animate-fade-in [animation-delay:800ms]">
             <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
             <p className="text-sm sm:text-base text-gray-500">
               Backed by Industry Leaders in Web3 and DeFi
