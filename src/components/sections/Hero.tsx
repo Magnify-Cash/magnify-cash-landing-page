@@ -29,7 +29,7 @@ const Hero = () => {
               <span className="inline-block mr-2">Through</span>
               <br className="hidden sm:block" />
               <span className="bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent inline-block mr-2">
-                Verified
+                Identity-Verified
               </span>
               <span className="bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent inline-block">
                 Lending
