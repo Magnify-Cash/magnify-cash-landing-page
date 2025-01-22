@@ -42,7 +42,7 @@ const Navigation = () => {
                 className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#ee9ca7] to-[#ffdde1] transition-all group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
               </a>
             ) : (
               <button
@@ -51,7 +51,7 @@ const Navigation = () => {
                 className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg"
               >
                 {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#ee9ca7] to-[#ffdde1] transition-all group-hover:w-full" />
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
               </button>
             )
           ))}
@@ -63,7 +63,7 @@ const Navigation = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button className="bg-gradient-to-r from-[#ee9ca7] to-[#ffdde1] text-white hover:opacity-90 transition-opacity hover:scale-105 px-8 py-6 text-lg font-semibold">
+            <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity hover:scale-105 px-8 py-6 text-lg font-semibold">
               Get Started
             </Button>
           </a>
