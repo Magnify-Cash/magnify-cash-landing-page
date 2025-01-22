@@ -1,4 +1,4 @@
-import { Rocket, Users, Crown, Shield, Globe } from "lucide-react";
+import { Rocket, Users, Crown, Shield, Globe, Bot } from "lucide-react";
 
 const Roadmap = () => {
   const milestones = [
@@ -7,6 +7,12 @@ const Roadmap = () => {
       quarter: "Q1 2025",
       title: "Launch & Security",
       description: "WorldID integration and security audits complete",
+    },
+    {
+      icon: <Bot className="w-8 h-8 text-purple-600" />,
+      quarter: "February 2025",
+      title: "Launch Magi AI Agent",
+      description: "AI-powered lending strategy advisor to optimize loan utilization",
     },
     {
       icon: <Rocket className="w-8 h-8 text-blue-600" />,
