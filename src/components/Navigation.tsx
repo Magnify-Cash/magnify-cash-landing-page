@@ -1,10 +1,20 @@
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -27,9 +37,11 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+        <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity hover-lift">
           <img 
             src="/lovable-uploads/de5d4a5d-e923-4a4b-b925-1110eb80251f.png" 
             alt="Magnify Cash Logo" 
@@ -38,7 +50,6 @@ const Navigation = () => {
           <span className="text-xl sm:text-2xl font-semibold">Magnify Cash</span>
         </Link>
         
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6 lg:space-x-10">
           {navigationItems.map((item) => (
             item.external ? (
@@ -47,7 +58,7 @@ const Navigation = () => {
                 href={item.path}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg"
+                className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg hover-lift"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
@@ -56,7 +67,7 @@ const Navigation = () => {
               <button
                 key={item.label}
                 onClick={() => scrollToSection(item.path)}
-                className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg"
+                className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg hover-lift"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
@@ -72,15 +83,15 @@ const Navigation = () => {
             rel="noopener noreferrer"
             className="hidden sm:block"
           >
-            <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity hover:scale-105 px-6 py-5 text-base sm:text-lg font-semibold">
+            <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity hover:scale-105 px-6 py-5 text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl">
               Get Started
             </Button>
           </a>
           
-          {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden p-2"
+            className="md:hidden p-2 hover:bg-gray-100 rounded-full transition-colors"
+            aria-label="Toggle menu"
           >
             {isMenuOpen ? (
               <X className="h-6 w-6" />
@@ -92,43 +103,46 @@ const Navigation = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMenuOpen && (
-        <div className="md:hidden absolute top-20 left-0 right-0 bg-background border-b border-border">
-          <div className="px-4 py-6 space-y-4">
-            {navigationItems.map((item) => (
-              item.external ? (
-                <a
-                  key={item.label}
-                  href={item.path}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block py-2 text-secondary hover:text-primary transition-colors"
-                >
-                  {item.label}
-                </a>
-              ) : (
-                <button
-                  key={item.label}
-                  onClick={() => scrollToSection(item.path)}
-                  className="block w-full text-left py-2 text-secondary hover:text-primary transition-colors"
-                >
-                  {item.label}
-                </button>
-              )
-            ))}
-            <a
-              href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block pt-4"
-            >
-              <Button className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity px-6 py-5 text-base font-semibold">
-                Get Started
-              </Button>
-            </a>
-          </div>
+      <div 
+        className={`md:hidden fixed inset-0 bg-background/80 backdrop-blur-xl transition-transform duration-300 ease-in-out ${
+          isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        style={{ top: '5rem' }}
+      >
+        <div className="px-4 py-6 space-y-4">
+          {navigationItems.map((item) => (
+            item.external ? (
+              <a
+                key={item.label}
+                href={item.path}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block py-2 text-secondary hover:text-primary transition-colors hover-lift"
+              >
+                {item.label}
+              </a>
+            ) : (
+              <button
+                key={item.label}
+                onClick={() => scrollToSection(item.path)}
+                className="block w-full text-left py-2 text-secondary hover:text-primary transition-colors hover-lift"
+              >
+                {item.label}
+              </button>
+            )
+          ))}
+          <a
+            href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block pt-4"
+          >
+            <Button className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity px-6 py-5 text-base font-semibold shadow-lg hover:shadow-xl">
+              Get Started
+            </Button>
+          </a>
         </div>
-      )}
+      </div>
     </nav>
   );
 };

@@ -27,7 +27,7 @@
   }
 
   * {
-    @apply border-border;
+    @apply border-border scroll-smooth;
   }
 
   body {
@@ -35,12 +35,16 @@
     font-feature-settings: "ss01" on, "ss02" on, "cv01" on, "cv02" on;
   }
 
+  section {
+    @apply scroll-mt-20;
+  }
+
   h1 {
     @apply text-3xl sm:text-h1 font-bold tracking-tight text-primary;
   }
 
   h2 {
-    @apply text-2xl sm:text-h2 font-bold tracking-tight text-primary;
+    @apply text-2xl sm:text-h2 font-bold tracking-tight text-primary bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900;
   }
 
   h3 {
@@ -84,5 +88,13 @@
 
   .glass {
     @apply bg-white/10 backdrop-blur-lg border border-white/20;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .gradient-border {
+    @apply relative before:absolute before:inset-0 before:p-[1px] before:bg-gradient-to-r before:from-blue-600 before:to-pink-600 before:rounded-full before:-z-10;
   }
 }

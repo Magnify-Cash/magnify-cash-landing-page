@@ -68,6 +68,8 @@ export default {
         "bounce": "bounce 1s infinite",
         "pulse": "pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
         "gradient": "gradient 8s ease infinite",
+        "fade-up": "fade-up 0.5s ease-out",
+        "slide-in": "slide-in 0.3s ease-out",
       },
       keyframes: {
         float: {
@@ -77,6 +79,14 @@ export default {
         gradient: {
           "0%, 100%": { backgroundPosition: "0% 50%" },
           "50%": { backgroundPosition: "100% 50%" },
+        },
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(10px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "slide-in": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
         },
       },
       backdropBlur: {
