@@ -23,12 +23,12 @@ const Hero = () => {
           {/* Main heading */}
           <div className="text-center animate-fade-in [animation-delay:200ms]">
             <h1 className="text-[2.5rem] sm:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1] mb-8">
-              <span className="inline-block">Transforming</span>
-              <span className="inline-block">Global</span>
-              <span className="inline-block">Finance</span>
-              <span className="inline-block">Through</span>
+              <span className="inline-block mr-2">Transforming</span>
+              <span className="inline-block mr-2">Global</span>
+              <span className="inline-block mr-2">Finance</span>
+              <span className="inline-block mr-2">Through</span>
               <br className="hidden sm:block" />
-              <span className="bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent inline-block">
+              <span className="bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent inline-block mr-2">
                 Verified
               </span>
               <span className="bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent inline-block">
