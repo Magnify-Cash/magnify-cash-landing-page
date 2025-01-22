@@ -24,7 +24,11 @@ export default {
         secondary: {
           DEFAULT: "#4A4945",
         },
-        accent: "#C7FB76",
+        accent: {
+          from: "#ee9ca7",
+          to: "#ffdde1",
+          DEFAULT: "#ee9ca7",
+        },
         background: {
           DEFAULT: "#FAFAF8",
         },
