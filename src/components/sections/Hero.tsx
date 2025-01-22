@@ -2,19 +2,19 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-12 sm:py-32">
+    <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
       <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-pink-100 opacity-20 animate-gradient" />
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       
       <div className="mx-auto max-w-7xl relative">
         <div className="flex flex-col items-center space-y-12 max-w-[1200px] mx-auto">
           {/* Live badge */}
-          <div className="animate-fade-in">
+          <div className="animate-fade-in scale-90 sm:scale-100">
             <a
               href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors"
+              className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors ring-1 ring-blue-700/10"
             >
               🚀 Now Live on World App Store
             </a>
@@ -22,12 +22,12 @@ const Hero = () => {
 
           {/* Main heading */}
           <div className="text-center max-w-5xl mx-auto animate-fade-in [animation-delay:200ms]">
-            <h1 className="text-[2.5rem] sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.2] mb-6">
-              <span className="inline-block">Transforming Global Finance</span>
-              <br />
-              <span className="inline-block">Through</span>
+            <h1 className="text-[2.5rem] sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.2] mb-8">
+              <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
+                Transforming Global Finance Through
+              </span>
               <br className="hidden sm:block" />
-              <span className="bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent">
+              <span className="inline-block bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent mt-2 sm:mt-4">
                 Identity-Verified Lending
               </span>
             </h1>
@@ -44,21 +44,21 @@ const Hero = () => {
               href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 bg-[#6366F1] hover:bg-[#5558F0] text-white rounded-full font-semibold transition-all text-center flex items-center justify-center gap-2 text-lg"
+              className="w-full sm:w-auto px-8 py-4 bg-[#6366F1] hover:bg-[#5558F0] text-white rounded-full font-semibold transition-all text-center flex items-center justify-center gap-2 text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
               Start Your Journey
               <ArrowRight className="w-5 h-5" />
             </a>
             
             <button 
-              className="w-full sm:w-auto px-8 py-4 bg-gray-100 text-gray-500 rounded-full font-semibold transition-colors text-lg hover:bg-gray-200"
+              className="w-full sm:w-auto px-8 py-4 bg-gray-100 text-gray-500 rounded-full font-semibold transition-all text-lg hover:bg-gray-200 hover:text-gray-600 ring-1 ring-gray-200 hover:ring-gray-300"
             >
               Become a Lender
             </button>
           </div>
 
           {/* Status indicator */}
-          <div className="flex items-center justify-center gap-2 animate-fade-in [animation-delay:800ms]">
+          <div className="flex items-center justify-center gap-2 animate-fade-in [animation-delay:800ms] mt-2">
             <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
             <p className="text-sm sm:text-base text-gray-500">
               Backed by Industry Leaders in Web3 and DeFi
