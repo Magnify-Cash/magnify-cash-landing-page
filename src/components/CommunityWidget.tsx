@@ -10,7 +10,7 @@ const CommunityWidget = () => {
     <div className="fixed bottom-8 right-8 z-50">
       <HoverCard>
         <HoverCardTrigger asChild>
-          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all hover:scale-105 flex items-center gap-2 shadow-lg animate-bounce">
+          <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-all hover:scale-105 flex items-center gap-2 shadow-lg animate-[bounce_3s_infinite]">
             <MessageSquare className="w-5 h-5" />
             Join our community!
           </button>
