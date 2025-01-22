@@ -4,31 +4,31 @@ const Roadmap = () => {
   const milestones = [
     {
       icon: <Shield className="w-8 h-8 text-blue-600" />,
-      quarter: "Q1 2024",
+      quarter: "Q1 2025",
       title: "Launch & Security",
       description: "WorldID integration and security audits complete",
     },
     {
       icon: <Rocket className="w-8 h-8 text-blue-600" />,
-      quarter: "Q2 2024",
+      quarter: "Q2 2025",
       title: "Market Expansion",
       description: "Launch in key emerging markets with local partnerships",
     },
     {
       icon: <Users className="w-8 h-8 text-pink-600" />,
-      quarter: "Q3 2024",
+      quarter: "Q3 2025",
       title: "Community Growth",
       description: "Launch lending pools and governance framework",
     },
     {
       icon: <Crown className="w-8 h-8 text-purple-600" />,
-      quarter: "Q4 2024",
+      quarter: "Q4 2025",
       title: "Full Decentralization",
       description: "Complete transition to DAO governance",
     },
     {
       icon: <Globe className="w-8 h-8 text-green-600" />,
-      quarter: "2025",
+      quarter: "2026",
       title: "Global Scale",
       description: "Expand to 50+ countries with localized solutions",
     },
