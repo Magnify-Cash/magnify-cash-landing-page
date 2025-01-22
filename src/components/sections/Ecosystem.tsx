@@ -17,7 +17,19 @@ const Ecosystem = () => {
           Token & Staking
         </>
       ),
-      description: "Participate in governance and earn rewards through our native token ecosystem",
+      description: (
+        <>
+          Participate in governance and earn rewards through our native token ecosystem.{' '}
+          <a 
+            href="https://staking.magnify.cash/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            Start staking now →
+          </a>
+        </>
+      ),
       icon: <Coins className="w-8 h-8 text-blue-600" />,
       disabled: false
     },
