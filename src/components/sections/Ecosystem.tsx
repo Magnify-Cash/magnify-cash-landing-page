@@ -35,7 +35,19 @@ const Ecosystem = () => {
     },
     {
       title: "WorldID-Verified Borrowing",
-      description: "Quick, secure loans backed by your WorldID verification",
+      description: (
+        <>
+          Quick, secure loans backed by your WorldID verification{' '}
+          <a 
+            href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full font-semibold hover:opacity-90 transition-all hover:scale-105 animate-pulse"
+          >
+            Verify with WorldID →
+          </a>
+        </>
+      ),
       icon: <Wallet className="w-8 h-8 text-pink-600" />,
       disabled: false
     },
