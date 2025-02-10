@@ -27,7 +27,7 @@ const Traction = () => {
               subtext: "unique identities",
             },
             {
-              metric: "99.9%",
+              metric: "1,458%",
               label: "Total Growth Rate",
               subtext: "since launch",
             },
