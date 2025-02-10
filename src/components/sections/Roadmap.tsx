@@ -1,5 +1,5 @@
 
-import { Rocket, Users, Crown, Shield, Globe, Package } from "lucide-react";
+import { Rocket, Users, Crown, Shield, Globe, Package, MapPin } from "lucide-react";
 
 const Roadmap = () => {
   const milestones = [
@@ -20,6 +20,12 @@ const Roadmap = () => {
       quarter: "February 2025",
       title: "Market Expansion",
       description: "Launch in key emerging markets with local partnerships",
+    },
+    {
+      icon: <MapPin className="w-8 h-8 text-blue-600" />,
+      quarter: "March 2025",
+      title: "Asia/South America Expansion",
+      description: "Launch in key Asian and South American markets",
     },
     {
       icon: <Users className="w-8 h-8 text-pink-600" />,
