@@ -1,5 +1,5 @@
 
-import { Rocket, Users, Crown, Shield, Globe, Package, MapPin } from "lucide-react";
+import { Rocket, Users, Crown, Shield, Globe, Package, MapPin, Brain } from "lucide-react";
 
 const Roadmap = () => {
   const milestones = [
@@ -20,6 +20,12 @@ const Roadmap = () => {
       quarter: "February 2025",
       title: "Market Expansion",
       description: "Launch in key emerging markets with local partnerships",
+    },
+    {
+      icon: <Brain className="w-8 h-8 text-purple-600" />,
+      quarter: "March 2025",
+      title: "Release Magnify.Cash AI Agent",
+      description: "New AI Agent for optimizing risk on loans/repaying/help with navigating Magnify.cash app",
     },
     {
       icon: <MapPin className="w-8 h-8 text-blue-600" />,
