@@ -10,16 +10,16 @@ const Roadmap = () => {
       description: "WorldID integration and security audits complete",
     },
     {
-      icon: <Package className="w-8 h-8 text-purple-600" />,
-      quarter: "February 2025",
-      title: "Launch Magnify.Cash V2 App",
-      description: "New and improved V2 app to improve UX for users",
-    },
-    {
       icon: <Rocket className="w-8 h-8 text-blue-600" />,
-      quarter: "Q2 2025",
+      quarter: "February 2025",
       title: "Market Expansion",
       description: "Launch in key emerging markets with local partnerships",
+    },
+    {
+      icon: <Package className="w-8 h-8 text-purple-600" />,
+      quarter: "Q2 2025",
+      title: "Launch Magnify.Cash V2 App",
+      description: "New and improved V2 app to improve UX for users",
     },
     {
       icon: <Users className="w-8 h-8 text-pink-600" />,
