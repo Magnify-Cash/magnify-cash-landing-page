@@ -31,11 +31,11 @@ const Roadmap = () => {
       icon: <PiggyBank className="w-8 h-8 text-blue-600" />,
       quarter: "March 2025",
       title: "Release liquidity pools for lending to Magnify.Cash borrowers",
-      description: "Launch lending pools for providing liquidity to Magnify.Cash borrowers",
+      description: "Launch lending pools for Magnify.Cash borrowers",
     },
     {
       icon: <MapPin className="w-8 h-8 text-blue-600" />,
-      quarter: "March 2025",
+      quarter: "March 2025", 
       title: "Asia/South America Expansion",
       description: "Launch in key Asian and South American markets",
     },
