@@ -1,5 +1,5 @@
 
-import { Rocket, Users, Crown, Shield, Globe, Bot } from "lucide-react";
+import { Rocket, Users, Crown, Shield, Globe, Package } from "lucide-react";
 
 const Roadmap = () => {
   const milestones = [
@@ -10,10 +10,10 @@ const Roadmap = () => {
       description: "WorldID integration and security audits complete",
     },
     {
-      icon: <Bot className="w-8 h-8 text-purple-600" />,
+      icon: <Package className="w-8 h-8 text-purple-600" />,
       quarter: "February 2025",
       title: "Launch Magnify.Cash V2 App",
-      description: "AI-powered lending strategy advisor to optimize loan utilization",
+      description: "New and improved V2 app to improve UX for users",
     },
     {
       icon: <Rocket className="w-8 h-8 text-blue-600" />,
