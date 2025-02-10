@@ -56,7 +56,7 @@ const Traction = () => {
             {
               metric: "1K+",
               label: "Issued Loans",
-              subtext: "90%+ repayment rate",
+              subtext: "across all markets",
             },
             {
               metric: "$1-10",
