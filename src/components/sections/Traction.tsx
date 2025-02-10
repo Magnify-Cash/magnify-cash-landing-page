@@ -29,7 +29,7 @@ const Traction = () => {
             {
               metric: "1,458%",
               label: "Total Growth Rate",
-              subtext: "since launch",
+              subtext: "since Dec. 21st launch",
             },
           ].map((stat, index) => (
             <div 
