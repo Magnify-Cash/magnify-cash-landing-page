@@ -1,3 +1,4 @@
+
 const Traction = () => {
   return (
     <section className="py-32 px-6 lg:px-8">
@@ -5,30 +6,30 @@ const Traction = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold mb-6">Early Success Driving Global Impact</h2>
           <p className="text-secondary max-w-2xl mx-auto text-lg">
-            Ranked #78 out of 886 World ID apps with rapid user growth and engagement
+            Ranked #86 out of 1093 World ID apps with rapid user growth and engagement
           </p>
         </div>
         <div className="grid md:grid-cols-4 gap-8 mb-16">
           {[
             {
-              metric: "361K+",
+              metric: "1.37M+",
               label: "Weekly Impressions",
               subtext: "3.2% engagement rate",
             },
             {
-              metric: "17,150",
+              metric: "45.5K",
               label: "Active Sessions",
               subtext: "last 7 days",
             },
             {
-              metric: "1,929",
+              metric: "4,520",
               label: "Verified Users",
               subtext: "unique identities",
             },
             {
               metric: "99.9%",
               label: "New User Rate",
-              subtext: "2,312 this week",
+              subtext: "4,312 this week",
             },
           ].map((stat, index) => (
             <div 
