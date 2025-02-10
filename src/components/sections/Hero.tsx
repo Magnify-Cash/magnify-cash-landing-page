@@ -69,7 +69,7 @@ const Hero = () => {
             <button 
               className="w-full sm:w-auto px-8 py-4 bg-transparent text-gray-700 rounded-full font-semibold transition-all text-lg hover:bg-gray-50 relative group overflow-hidden border border-gray-200 hover:border-blue-300"
             >
-              <span className="relative z-10">Become a Lender</span>
+              <span className="relative z-10">Become a Lender - Coming Soon</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity" />
             </button>
           </div>
