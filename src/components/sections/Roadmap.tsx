@@ -1,3 +1,4 @@
+
 import { Rocket, Users, Crown, Shield, Globe, Bot } from "lucide-react";
 
 const Roadmap = () => {
@@ -11,7 +12,7 @@ const Roadmap = () => {
     {
       icon: <Bot className="w-8 h-8 text-purple-600" />,
       quarter: "February 2025",
-      title: "Launch Magi AI Agent",
+      title: "Launch Magnify.Cash V2 App",
       description: "AI-powered lending strategy advisor to optimize loan utilization",
     },
     {
