@@ -13,13 +13,13 @@ const Traction = () => {
           {[
             {
               metric: "1.37M+",
-              label: "Weekly Impressions",
+              label: "Total Impressions",
               subtext: "3.2% engagement rate",
             },
             {
               metric: "45.5K",
-              label: "Active Sessions",
-              subtext: "last 7 days",
+              label: "Total Active Sessions",
+              subtext: "since launch",
             },
             {
               metric: "4,520",
@@ -28,8 +28,8 @@ const Traction = () => {
             },
             {
               metric: "99.9%",
-              label: "New User Rate",
-              subtext: "4,312 this week",
+              label: "Total Growth Rate",
+              subtext: "since launch",
             },
           ].map((stat, index) => (
             <div 
