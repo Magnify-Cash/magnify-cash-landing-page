@@ -17,7 +17,7 @@ const Roadmap = () => {
     },
     {
       icon: <Package className="w-8 h-8 text-purple-600" />,
-      quarter: "Q2 2025",
+      quarter: "February 2025",
       title: "Launch Magnify.Cash V2 App",
       description: "New and improved V2 app to improve UX for users",
     },
