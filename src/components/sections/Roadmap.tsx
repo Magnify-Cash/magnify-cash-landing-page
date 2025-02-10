@@ -1,5 +1,5 @@
 
-import { Rocket, Users, Crown, Shield, Globe, Package, MapPin, Brain } from "lucide-react";
+import { Rocket, Users, Crown, Shield, Globe, Package, MapPin, Brain, PiggyBank } from "lucide-react";
 
 const Roadmap = () => {
   const milestones = [
@@ -26,6 +26,12 @@ const Roadmap = () => {
       quarter: "March 2025",
       title: "Release Magnify.Cash AI Agent",
       description: "New AI Agent for optimizing risk on loans/repaying/help with navigating Magnify.cash app",
+    },
+    {
+      icon: <PiggyBank className="w-8 h-8 text-blue-600" />,
+      quarter: "March 2025",
+      title: "Release liquidity pools for lending to Magnify.Cash borrowers",
+      description: "Launch lending pools for providing liquidity to Magnify.Cash borrowers",
     },
     {
       icon: <MapPin className="w-8 h-8 text-blue-600" />,
