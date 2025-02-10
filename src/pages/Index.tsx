@@ -1,3 +1,4 @@
+
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Hero from "@/components/sections/Hero";
@@ -11,7 +12,7 @@ import CommunityWidget from "@/components/CommunityWidget";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white relative">
       <Navigation />
       <main className="pt-20">
         <Hero />
@@ -21,14 +22,14 @@ const Index = () => {
             <Traction />
           </div>
         </div>
-        <div className="py-12">
+        <div className="py-12" id="features">
           <Features />
         </div>
         <div className="relative overflow-hidden">
-          <div className="py-12">
+          <div className="py-12" id="ecosystem">
             <Ecosystem />
           </div>
-          <div className="py-12">
+          <div className="py-12" id="roadmap">
             <Roadmap />
           </div>
         </div>

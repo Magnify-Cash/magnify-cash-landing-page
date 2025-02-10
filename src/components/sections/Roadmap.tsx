@@ -1,4 +1,5 @@
-import { Rocket, Users, Crown, Shield, Globe, Bot } from "lucide-react";
+
+import { Rocket, Users, Crown, Shield, Globe, Package, MapPin, Brain, PiggyBank } from "lucide-react";
 
 const Roadmap = () => {
   const milestones = [
@@ -9,16 +10,34 @@ const Roadmap = () => {
       description: "WorldID integration and security audits complete",
     },
     {
-      icon: <Bot className="w-8 h-8 text-purple-600" />,
+      icon: <Package className="w-8 h-8 text-purple-600" />,
       quarter: "February 2025",
-      title: "Launch Magi AI Agent",
-      description: "AI-powered lending strategy advisor to optimize loan utilization",
+      title: "Launch Magnify.Cash V2 App",
+      description: "New and improved V2 app to improve UX for users",
     },
     {
       icon: <Rocket className="w-8 h-8 text-blue-600" />,
-      quarter: "Q2 2025",
+      quarter: "February 2025",
       title: "Market Expansion",
       description: "Launch in key emerging markets with local partnerships",
+    },
+    {
+      icon: <Brain className="w-8 h-8 text-purple-600" />,
+      quarter: "March 2025",
+      title: "Release Magnify.Cash AI Agent",
+      description: "New AI Agent for optimizing risk on loans/repaying/help with navigating Magnify.cash app",
+    },
+    {
+      icon: <PiggyBank className="w-8 h-8 text-blue-600" />,
+      quarter: "March 2025",
+      title: "Release liquidity pools for lending to Magnify.Cash borrowers",
+      description: "Launch lending pools for Magnify.Cash borrowers",
+    },
+    {
+      icon: <MapPin className="w-8 h-8 text-blue-600" />,
+      quarter: "March 2025", 
+      title: "Asia/South America Expansion",
+      description: "Launch in key Asian and South American markets",
     },
     {
       icon: <Users className="w-8 h-8 text-pink-600" />,

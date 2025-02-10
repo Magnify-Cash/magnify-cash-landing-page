@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -38,6 +39,21 @@ const Hero = () => {
             Magnify Cash is revolutionizing micro-lending by combining WorldID verification with gas-free transactions, making loans accessible to billions globally.
           </p>
 
+          {/* Social Proof Metrics */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 w-full max-w-4xl mx-auto animate-fade-in [animation-delay:500ms]">
+            {[
+              { value: "4,520+", label: "Verified Users" },
+              { value: "45.5K+", label: "Active Sessions" },
+              { value: "$7K+", label: "Total Volume" },
+              { value: "90%+", label: "Repayment Rate" },
+            ].map((metric, index) => (
+              <div key={index} className="text-center p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-200 hover:border-blue-300 transition-all hover:scale-105">
+                <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">{metric.value}</div>
+                <div className="text-sm text-gray-600">{metric.label}</div>
+              </div>
+            ))}
+          </div>
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full max-w-xl mx-auto animate-fade-in [animation-delay:600ms]">
             <a 
@@ -51,9 +67,10 @@ const Hero = () => {
             </a>
             
             <button 
-              className="w-full sm:w-auto px-8 py-4 bg-gray-100 text-gray-500 rounded-full font-semibold transition-all text-lg hover:bg-gray-200 hover:text-gray-600 ring-1 ring-gray-200 hover:ring-gray-300"
+              className="w-full sm:w-auto px-8 py-4 bg-transparent text-gray-700 rounded-full font-semibold transition-all text-lg hover:bg-gray-50 relative group overflow-hidden border border-gray-200 hover:border-blue-300"
             >
-              Become a Lender
+              <span className="relative z-10">Become a Lender - Coming Soon</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity" />
             </button>
           </div>
 
