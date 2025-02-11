@@ -27,9 +27,9 @@ const Traction = () => {
               subtext: "unique identities",
             },
             {
-              metric: "99.9%",
+              metric: "1,458%",
               label: "Total Growth Rate",
-              subtext: "since launch",
+              subtext: "since Dec. 21st launch",
             },
           ].map((stat, index) => (
             <div 
@@ -56,7 +56,7 @@ const Traction = () => {
             {
               metric: "1K+",
               label: "Issued Loans",
-              subtext: "90%+ repayment rate",
+              subtext: "across all markets",
             },
             {
               metric: "$1-10",
