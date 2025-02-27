@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,23 +20,25 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#141413",
+          DEFAULT: "#1A1E8F", // Primary Blue
         },
         secondary: {
-          DEFAULT: "#4A4945",
+          DEFAULT: "#8B6FCF", // Soft Lavender
         },
-        accent: "#C7FB76",
+        accent: {
+          DEFAULT: "#A11F75", // Gradient Magenta
+        },
         background: {
-          DEFAULT: "#FAFAF8",
+          DEFAULT: "#FFFFFF",
         },
         surface: {
-          DEFAULT: "#fff",
+          DEFAULT: "#FFFFFF",
         },
         muted: {
-          DEFAULT: "#6E6D67",
+          DEFAULT: "#5A1A8F", // Deep Purple
         },
         "muted-foreground": {
-          DEFAULT: "#4A4945",
+          DEFAULT: "#8B6FCF", // Soft Lavender
         },
         border: {
           DEFAULT: "#E6E4DD",
@@ -43,10 +46,10 @@ export default {
         input: {
           DEFAULT: "#F0EFEA",
         },
-        foreground: "#222222",
+        foreground: "#1A1E8F", // Primary Blue
       },
       textColor: {
-        foreground: "#222222",
+        foreground: "#1A1E8F", // Primary Blue
       },
       fontFamily: {
         sans: ["SF Pro Display", "system-ui", "sans-serif"],
