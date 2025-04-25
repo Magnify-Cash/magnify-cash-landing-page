@@ -1,4 +1,3 @@
-
 const Traction = () => {
   return (
     <section className="py-32 px-6 lg:px-8">
@@ -15,11 +14,6 @@ const Traction = () => {
               metric: "5.8M+",
               label: "Total Impressions",
               subtext: "402.5% increase",
-            },
-            {
-              metric: "229.3K",
-              label: "Sessions",
-              subtext: "since launch",
             },
             {
               metric: "7,701",

@@ -43,7 +43,7 @@ const Hero = () => {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 w-full max-w-4xl mx-auto animate-fade-in [animation-delay:500ms]">
             {[
               { value: "7.7K+", label: "ORB Verified Users" },
-              { value: "229.3K+", label: "Sessions" },
+              { value: "5.8M+", label: "Total Impressions" },
               { value: "1.5K+", label: "Issued Loans" },
               { value: "$10.1K+", label: "Total Volume" },
             ].map((metric, index) => (
