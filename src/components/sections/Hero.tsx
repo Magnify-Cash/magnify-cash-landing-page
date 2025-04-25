@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -41,10 +42,10 @@ const Hero = () => {
           {/* Social Proof Metrics */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-8 w-full max-w-4xl mx-auto animate-fade-in [animation-delay:500ms]">
             {[
-              { value: "14.1K+", label: "Verified Users" },
-              { value: "130.5K+", label: "Sessions" },
-              { value: "1.3K+", label: "Issued Loans" },
-              { value: "$8K+", label: "Total Volume" },
+              { value: "7.7K+", label: "Verified Users" },
+              { value: "229.3K+", label: "Sessions" },
+              { value: "1.5K+", label: "Issued Loans" },
+              { value: "$10.1K+", label: "Total Volume" },
             ].map((metric, index) => (
               <div key={index} className="text-center p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-200 hover:border-blue-300 transition-all hover:scale-105">
                 <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">{metric.value}</div>

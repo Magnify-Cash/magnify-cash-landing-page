@@ -6,25 +6,25 @@ const Traction = () => {
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold mb-6">Early Success Driving Global Impact</h2>
           <p className="text-secondary max-w-2xl mx-auto text-lg">
-            Ranked #71 out of 1262 World ID apps with rapid user growth and engagement
+            Ranked #94 out of 2148 World ID apps with rapid user growth and engagement
           </p>
         </div>
         <div className="grid md:grid-cols-4 gap-8 mb-16">
           {[
             {
-              metric: "2.3M+",
+              metric: "5.8M+",
               label: "Total Impressions",
               subtext: "402.5% increase",
             },
             {
-              metric: "130.5K",
+              metric: "229.3K",
               label: "Sessions",
               subtext: "since launch",
             },
             {
-              metric: "14,114",
+              metric: "7,701",
               label: "Verified Users",
-              subtext: "13,799 verifications",
+              subtext: "21,577 verifications",
             },
             {
               metric: "1,458%",
@@ -49,12 +49,12 @@ const Traction = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              metric: "$8K+",
+              metric: "$10.1K+",
               label: "Total Loan Volume",
               subtext: "across all markets",
             },
             {
-              metric: "1.3K+",
+              metric: "1.5K+",
               label: "Issued Loans",
               subtext: "across all markets",
             },
