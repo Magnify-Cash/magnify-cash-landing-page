@@ -6,33 +6,33 @@ const Problem = () => {
     <section className="py-24 px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="text-center space-y-16">
-          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
-            Revolutionizing DeFi Access
+          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient">
+            Get a Loan Just by Being You
           </h2>
           
           <div className="p-10 rounded-3xl bg-white/50 backdrop-blur-sm border border-border shadow-xl animate-fade-in [animation-delay:200ms]">
-            <h3 className="text-3xl font-semibold mb-10">DeFi Market Potential</h3>
+            <h3 className="text-3xl font-semibold mb-10">World ID Powered Lending</h3>
             <div className="grid md:grid-cols-3 gap-10">
               {[
                 {
+                  icon: <ShieldCheck className="w-12 h-12 mx-auto mb-6 text-purple-600" />,
+                  value: "Instant",
+                  text: "Loan Approval Without Traditional Credit Checks"
+                },
+                {
                   icon: <TrendingUp className="w-12 h-12 mx-auto mb-6 text-blue-600" />,
-                  value: "$47B",
-                  text: "Total Value Locked in DeFi lending protocols"
+                  value: "0%",
+                  text: "Collateral Required - Verified by World ID"
                 },
                 {
-                  icon: <ShieldCheck className="w-12 h-12 mx-auto mb-6 text-pink-600" />,
-                  value: "7.7K+",
-                  text: "World ID verified users on Magnify"
-                },
-                {
-                  icon: <Coins className="w-12 h-12 mx-auto mb-6 text-purple-600" />,
+                  icon: <Coins className="w-12 h-12 mx-auto mb-6 text-pink-600" />,
                   value: "20%",
-                  text: "Maximum APY for verified lenders"
+                  text: "Maximum APY for Verified Lenders"
                 }
               ].map((stat, index) => (
                 <div 
                   key={index}
-                  className="p-8 rounded-2xl bg-gradient-to-br from-blue-500/5 to-pink-500/5 border border-border hover:border-accent transition-all duration-300 hover:scale-105 animate-fade-in"
+                  className="p-8 rounded-2xl bg-gradient-to-br from-purple-500/5 to-pink-500/5 border border-border hover:border-accent transition-all duration-300 hover:scale-105 animate-fade-in"
                   style={{ animationDelay: `${(index + 1) * 200}ms` }}
                 >
                   {stat.icon}
@@ -46,19 +46,19 @@ const Problem = () => {
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                icon: <ShieldCheck className="w-16 h-16 mx-auto mb-8 text-blue-600" />,
-                title: "The Challenge",
-                description: "Traditional DeFi platforms struggle with identity verification, high gas fees, and complex user experiences."
+                icon: <ShieldCheck className="w-16 h-16 mx-auto mb-8 text-purple-600" />,
+                title: "World ID Verification",
+                description: "Get instant loans backed by your unique digital identity. No credit score needed, just your verified presence."
               },
               {
-                icon: <Coins className="w-16 h-16 mx-auto mb-8 text-pink-600" />,
-                title: "Our Innovation",
-                description: "Identity-verified lending pools with zero gas fees, offering up to 20% APY through World ID verification."
+                icon: <Coins className="w-16 h-16 mx-auto mb-8 text-blue-600" />,
+                title: "Two-Sided Marketplace",
+                description: "Become a lender or borrower. Earn up to 20% APY or access instant loans with zero collateral."
               },
               {
-                icon: <TrendingUp className="w-16 h-16 mx-auto mb-8 text-purple-600" />,
-                title: "The Opportunity",
-                description: "Join a growing ecosystem of verified users earning sustainable yields through transparent, secure lending pools."
+                icon: <TrendingUp className="w-16 h-16 mx-auto mb-8 text-pink-600" />,
+                title: "Powered by $MAG",
+                description: "Join a transparent, secure lending ecosystem settled on World Chain, revolutionizing micro-lending."
               }
             ].map((item, index) => (
               <div 
