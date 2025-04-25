@@ -4,7 +4,7 @@ const Traction = () => {
     <section className="py-32 px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold mb-6">Driving Global Financial Inclusion</h2>
+          <h2 className="text-4xl font-bold mb-6">Lend. Earn. Empower.</h2>
           <p className="text-secondary max-w-2xl mx-auto text-lg">
             Magnify V3 combines human identity with DeFi to create a more equitable financial system
           </p>
