@@ -1,3 +1,4 @@
+
 const CallToAction = () => {
   return (
     <section className="py-16 sm:py-24 bg-black text-white px-4 sm:px-6 lg:px-8">
@@ -7,12 +8,12 @@ const CallToAction = () => {
         </h2>
         <div className="flex flex-col gap-4 animate-fade-in [animation-delay:200ms] max-w-md mx-auto">
           <a 
-            href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10" 
+            href="https://miniappv2.magnify.cash/lending" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="w-full px-6 py-4 bg-gradient-to-r from-[#4F6AF6] to-pink-500 text-white rounded-full font-semibold hover:opacity-90 transition-all text-lg"
           >
-            Access High-Yield Pools
+            Access Shared Lending Pool
           </a>
           <a 
             href="https://discord.gg/magnifycash" 
