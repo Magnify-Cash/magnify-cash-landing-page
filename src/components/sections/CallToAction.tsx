@@ -3,7 +3,7 @@ const CallToAction = () => {
     <section className="py-16 sm:py-24 bg-black text-white px-4 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl text-center">
         <h2 className="text-2xl sm:text-4xl font-bold mb-6 animate-fade-in leading-tight text-white">
-          Be part of a revolutionary platform that's making financial inclusion a reality for billions worldwide.
+          Join Magnify V3 and Start Earning Up to 20% APY Today
         </h2>
         <div className="flex flex-col gap-4 animate-fade-in [animation-delay:200ms] max-w-md mx-auto">
           <a 
@@ -12,7 +12,7 @@ const CallToAction = () => {
             rel="noopener noreferrer" 
             className="w-full px-6 py-4 bg-gradient-to-r from-[#4F6AF6] to-pink-500 text-white rounded-full font-semibold hover:opacity-90 transition-all text-lg"
           >
-            Get started
+            Access High-Yield Pools
           </a>
           <a 
             href="https://discord.gg/magnifycash" 

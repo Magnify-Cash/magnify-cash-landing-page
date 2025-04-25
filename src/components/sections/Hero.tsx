@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -17,7 +16,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors ring-1 ring-blue-700/10"
             >
-              🚀 Now Live on World App Store
+              🚀 V3 Now Live - Up to 20% APY
             </a>
           </div>
 
@@ -25,18 +24,18 @@ const Hero = () => {
           <div className="text-center max-w-5xl mx-auto animate-fade-in [animation-delay:200ms]">
             <h1 className="text-[2.5rem] sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.2] mb-8">
               <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
-                Transforming Global Finance Through
+                The Future of DeFi is
               </span>
               <br className="hidden sm:block" />
               <span className="inline-block bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent mt-2 sm:mt-4">
-                Identity-Verified Lending
+                Gas-Free & Identity Verified
               </span>
             </h1>
           </div>
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl text-center animate-fade-in [animation-delay:400ms] leading-relaxed px-4">
-            Magnify Cash is revolutionizing micro-lending by combining WorldID verification with gas-free transactions, making loans accessible to billions globally.
+            Join over 7,700 World ID verified users accessing high-yield pools and gas-free transactions on Magnify V3.
           </p>
 
           {/* Social Proof Metrics */}
