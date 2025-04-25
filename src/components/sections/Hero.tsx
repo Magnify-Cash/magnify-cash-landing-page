@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -66,12 +65,15 @@ const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </a>
             
-            <button 
+            <a 
+              href="https://miniappv2.magnify.cash/lending"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-transparent text-gray-700 rounded-full font-semibold transition-all text-lg hover:bg-gray-50 relative group overflow-hidden border border-gray-200 hover:border-blue-300"
             >
-              <span className="relative z-10">Become a Lender - Coming Soon</span>
+              <span className="relative z-10">Become a Lender</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity" />
-            </button>
+            </a>
           </div>
 
           {/* Status indicator */}
