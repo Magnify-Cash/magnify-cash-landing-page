@@ -23,7 +23,7 @@ const Traction = () => {
             },
             {
               metric: "7,701",
-              label: "Verified Users",
+              label: "ORB Verified Users",
               subtext: "21,577 verifications",
             },
             {
