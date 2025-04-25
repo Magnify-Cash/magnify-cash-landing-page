@@ -1,14 +1,16 @@
+
 const Traction = () => {
   return (
     <section className="py-32 px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold mb-6">Early Success Driving Global Impact</h2>
+          <h2 className="text-4xl font-bold mb-6">Driving Global Financial Inclusion</h2>
           <p className="text-secondary max-w-2xl mx-auto text-lg">
-            Ranked #94 out of 2148 World ID apps with rapid user growth and engagement
+            Magnify V3 combines human identity with DeFi to create a more equitable financial system
           </p>
         </div>
-        <div className="grid md:grid-cols-4 gap-8 mb-16">
+
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {[
             {
               metric: "5.8M+",
@@ -21,9 +23,9 @@ const Traction = () => {
               subtext: "21,577 verifications",
             },
             {
-              metric: "1,458%",
-              label: "Total Growth Rate",
-              subtext: "since Dec. 21st launch",
+              metric: "20%",
+              label: "Max APY",
+              subtext: "on high-yield pools",
             },
           ].map((stat, index) => (
             <div 
@@ -43,19 +45,19 @@ const Traction = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              metric: "$10.1K+",
-              label: "Total Loan Volume",
-              subtext: "across all markets",
+              metric: "3",
+              label: "Liquidity Pools",
+              subtext: "risk-tiered vaults",
             },
             {
-              metric: "1.5K+",
-              label: "Issued Loans",
-              subtext: "across all markets",
+              metric: "100%",
+              label: "Gasless",
+              subtext: "transactions on World Chain",
             },
             {
-              metric: "$1-15",
-              label: "Average Loan Size",
-              subtext: "accessible micro-loans",
+              metric: "Apr 29",
+              label: "V3 Launch Date",
+              subtext: "borrowing goes live",
             },
           ].map((stat, index) => (
             <div 
