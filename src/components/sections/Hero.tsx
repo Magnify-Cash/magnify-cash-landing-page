@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
@@ -16,7 +17,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors ring-1 ring-blue-700/10"
             >
-              🚀 V3 Now Live - Up to 20% APY
+              🚀 V3 Launch: DeFi Redefined
             </a>
           </div>
 
@@ -24,18 +25,18 @@ const Hero = () => {
           <div className="text-center max-w-5xl mx-auto animate-fade-in [animation-delay:200ms]">
             <h1 className="text-[2.5rem] sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.2] mb-8">
               <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
-                The Future of DeFi is
+                Unlock Financial Freedom
               </span>
               <br className="hidden sm:block" />
               <span className="inline-block bg-gradient-to-r from-[#4F6AF6] via-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent mt-2 sm:mt-4">
-                Gas-Free & Identity Verified
+                Zero Gas, Total Control
               </span>
             </h1>
           </div>
 
           {/* Description */}
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl text-center animate-fade-in [animation-delay:400ms] leading-relaxed px-4">
-            Join over 7,700 World ID verified users accessing high-yield pools and gas-free transactions on Magnify V3.
+            Experience the future of decentralized finance: Identity-verified pools, 20% max APY, and seamless gasless transactions—all in one platform.
           </p>
 
           {/* Social Proof Metrics */}
@@ -61,7 +62,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-[#6366F1] hover:bg-[#5558F0] text-white rounded-full font-semibold transition-all text-center flex items-center justify-center gap-2 text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
-              Start Your Journey
+              Start Your DeFi Journey
               <ArrowRight className="w-5 h-5" />
             </a>
             
@@ -71,7 +72,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-transparent text-gray-700 rounded-full font-semibold transition-all text-lg hover:bg-gray-50 relative group overflow-hidden border border-gray-200 hover:border-blue-300"
             >
-              <span className="relative z-10">Become a Lender</span>
+              <span className="relative z-10">Explore Lending Pools</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity" />
             </a>
           </div>
@@ -80,7 +81,7 @@ const Hero = () => {
           <div className="flex items-center justify-center gap-2 animate-fade-in [animation-delay:800ms] mt-2">
             <span className="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
             <p className="text-sm sm:text-base text-gray-500">
-              Backed by Industry Leaders in Web3 and DeFi
+              Backed by Cutting-Edge Web3 Innovation
             </p>
           </div>
         </div>
