@@ -61,7 +61,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#4F6AF6] to-[#D946EF] text-white rounded-full font-semibold transition-all text-center flex items-center justify-center gap-2 text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
-              Access Lending Pool
+              Become a Micro-lender
               <ArrowRight className="w-5 h-5" />
             </a>
             
@@ -71,7 +71,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 rounded-full font-semibold transition-all text-lg hover:bg-white relative group overflow-hidden border border-gray-200 hover:border-blue-300 shadow-sm hover:shadow-lg"
             >
-              <span className="relative z-10">Get Verified</span>
+              <span className="relative z-10">Get a Micro-loan</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity" />
             </a>
           </div>
