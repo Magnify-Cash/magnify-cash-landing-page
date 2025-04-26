@@ -1,3 +1,4 @@
+
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronUp } from "lucide-react";
@@ -76,14 +77,14 @@ const Navigation = () => {
             <span className="text-xl sm:text-2xl font-semibold">Magnify Cash</span>
           </Link>
           
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-10">
+          <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
             {navigationItems.map(item => item.external ? 
               <a 
                 key={item.label} 
                 href={item.path} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg hover-lift"
+                className="px-3 py-2 text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg hover-lift"
               >
                 {item.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
@@ -92,7 +93,7 @@ const Navigation = () => {
               <button 
                 key={item.label} 
                 onClick={() => scrollToSection(item.path)} 
-                className={`text-lg transition-colors relative group cursor-pointer hover-lift ${activeSection === item.path ? 'text-primary font-medium' : 'text-secondary hover:text-primary'}`}
+                className={`px-3 py-2 text-lg transition-colors relative group cursor-pointer hover-lift ${activeSection === item.path ? 'text-primary font-medium' : 'text-secondary hover:text-primary'}`}
               >
                 {item.label}
                 <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all ${activeSection === item.path ? 'w-full' : 'w-0 group-hover:w-full'}`} />
@@ -100,7 +101,7 @@ const Navigation = () => {
             )}
           </div>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-6">
             <a 
               href="https://miniappv2.magnify.cash/lending" 
               target="_blank" 
