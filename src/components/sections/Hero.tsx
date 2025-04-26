@@ -1,23 +1,22 @@
-
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
     <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-16 sm:py-24 lg:py-32">
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-pink-100 opacity-20 animate-gradient" />
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-pink-50 opacity-40 animate-gradient" />
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       
       <div className="mx-auto max-w-7xl relative">
-        <div className="flex flex-col items-center space-y-12 max-w-[1200px] mx-auto">
+        <div className="flex flex-col items-center space-y-8 sm:space-y-12 max-w-[1200px] mx-auto">
           {/* Live badge */}
           <div className="animate-fade-in scale-90 sm:scale-100">
             <a
-              href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
+              href="https://miniappv2.magnify.cash/lending"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors ring-1 ring-blue-700/10"
+              className="inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium bg-gradient-to-r from-blue-50 to-pink-50 text-primary hover:from-blue-100 hover:to-pink-100 transition-colors ring-1 ring-primary/10"
             >
-              🚀 V3 Launch: DeFi Redefined
+              🚀 Live Shared Lending Pool
             </a>
           </div>
 
@@ -47,32 +46,32 @@ const Hero = () => {
               { value: "1.5K+", label: "Issued Loans" },
               { value: "$10.1K+", label: "Total Volume" },
             ].map((metric, index) => (
-              <div key={index} className="text-center p-4 rounded-xl bg-white/50 backdrop-blur-sm border border-gray-200 hover:border-blue-300 transition-all hover:scale-105">
-                <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">{metric.value}</div>
+              <div key={index} className="text-center p-4 rounded-xl bg-white/80 backdrop-blur-sm border border-gray-200 hover:border-blue-300 transition-all hover:scale-105 shadow-sm">
+                <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary via-accent to-muted bg-clip-text text-transparent mb-1">{metric.value}</div>
                 <div className="text-sm text-gray-600">{metric.label}</div>
               </div>
             ))}
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 w-full max-w-xl mx-auto animate-fade-in [animation-delay:600ms]">
-            <a 
-              href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 bg-[#6366F1] hover:bg-[#5558F0] text-white rounded-full font-semibold transition-all text-center flex items-center justify-center gap-2 text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-            >
-              Start Your DeFi Journey
-              <ArrowRight className="w-5 h-5" />
-            </a>
-            
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full max-w-xl mx-auto animate-fade-in [animation-delay:600ms]">
             <a 
               href="https://miniappv2.magnify.cash/lending"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-8 py-4 bg-transparent text-gray-700 rounded-full font-semibold transition-all text-lg hover:bg-gray-50 relative group overflow-hidden border border-gray-200 hover:border-blue-300"
+              className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-[#4F6AF6] to-[#D946EF] text-white rounded-full font-semibold transition-all text-center flex items-center justify-center gap-2 text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5"
             >
-              <span className="relative z-10">Explore Lending Pools</span>
+              Access Lending Pool
+              <ArrowRight className="w-5 h-5" />
+            </a>
+            
+            <a 
+              href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 rounded-full font-semibold transition-all text-lg hover:bg-white relative group overflow-hidden border border-gray-200 hover:border-blue-300 shadow-sm hover:shadow-lg"
+            >
+              <span className="relative z-10">Get Verified</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity" />
             </a>
           </div>
