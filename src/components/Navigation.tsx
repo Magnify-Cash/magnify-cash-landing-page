@@ -8,6 +8,7 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [logoError, setLogoError] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,15 +69,26 @@ const Navigation = () => {
     external: true
   }];
 
+  const logoPath = "/lovable-uploads/475f41f7-5656-467b-b96e-e0e65b0cde06.png";
+  
   return <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity hover-lift">
             <img 
               alt="Magnify Cash Logo" 
-              className="h-8 w-8 sm:h-10 sm:w-10 rounded-[20%]" 
-              src="/lovable-uploads/475f41f7-5656-467b-b96e-e0e65b0cde06.png" 
+              className={`h-8 w-8 sm:h-10 sm:w-10 rounded-[20%] ${logoError ? 'hidden' : ''}`}
+              src={logoPath}
+              onError={(e) => {
+                console.error('Logo failed to load:', e);
+                setLogoError(true);
+              }}
             />
+            {logoError && (
+              <div className="h-8 w-8 sm:h-10 sm:w-10 bg-gray-200 rounded-[20%] flex items-center justify-center">
+                MC
+              </div>
+            )}
             <span className="text-xl sm:text-2xl font-semibold">Magnify Cash</span>
           </Link>
           
