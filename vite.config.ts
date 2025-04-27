@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => ({
     },
   },
   publicDir: 'public',
-  base: '',
+  base: '/',
   build: {
     sourcemap: true,
     assetsDir: 'assets',
