@@ -1,4 +1,3 @@
-
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronUp } from "lucide-react";
@@ -76,7 +75,7 @@ const Navigation = () => {
             <img 
               alt="Magnify Cash Logo" 
               className="h-8 w-8 sm:h-10 sm:w-10 rounded-[20%]" 
-              src="/lovable-uploads/new-logo.png" 
+              src="/lovable-uploads/475f41f7-5656-467b-b96e-e0e65b0cde06.png" 
             />
             <span className="text-xl sm:text-2xl font-semibold">Magnify Cash</span>
           </Link>
