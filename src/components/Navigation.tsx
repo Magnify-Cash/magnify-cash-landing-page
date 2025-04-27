@@ -1,3 +1,4 @@
+
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronUp } from "lucide-react";
@@ -72,7 +73,11 @@ const Navigation = () => {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity hover-lift">
-            <img alt="Magnify Cash Logo" className="h-8 w-8 sm:h-10 sm:w-10 rounded-[20%]" src="/lovable-uploads/new-logo.png" />
+            <img 
+              alt="Magnify Cash Logo" 
+              className="h-8 w-8 sm:h-10 sm:w-10 rounded-[20%]" 
+              src="/lovable-uploads/new-logo.png" 
+            />
             <span className="text-xl sm:text-2xl font-semibold">Magnify Cash</span>
           </Link>
           
