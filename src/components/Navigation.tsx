@@ -69,7 +69,7 @@ const Navigation = () => {
     external: true
   }];
 
-  const logoPath = "/lovable-uploads/058d4598-911c-44ec-a352-614d4fae40e5.png";
+  const logoPath = "/lovable-uploads/094313f1-3850-4a92-b448-cbd2d4321169.png";
   
   return <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
