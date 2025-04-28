@@ -2,7 +2,6 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronUp } from "lucide-react";
 import { useState, useEffect } from "react";
-import { getPublicImageUrl } from "@/lib/storage";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -77,7 +76,7 @@ const Navigation = () => {
     }
   ];
 
-  const logoUrl = getPublicImageUrl('mc-square-logo.png');
+  const logoUrl = "https://xomvanapvfsycnvwcows.supabase.co/storage/v1/object/public/website-assets//photo_2025-03-28%2014.44.50.jpeg";
   
   return <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
