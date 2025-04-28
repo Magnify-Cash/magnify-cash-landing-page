@@ -48,27 +48,34 @@ const Navigation = () => {
     });
   };
 
-  const navigationItems = [{
-    label: "Market Opportunity",
-    path: "market-opportunity"
-  }, {
-    label: "Ecosystem",
-    path: "ecosystem"
-  }, {
-    label: "Roadmap",
-    path: "roadmap"
-  }, {
-    label: "How Borrowing Works",
-    path: "features"
-  }, {
-    label: "Lending Pool",
-    path: "https://miniappv2.magnify.cash/lending",
-    external: true
-  }, {
-    label: "$MAG",
-    path: "https://www.coingecko.com/en/coins/magnify-cash",
-    external: true
-  }];
+  const navigationItems = [
+    {
+      label: "Market Opportunity",
+      path: "market-opportunity"
+    },
+    {
+      label: "Ecosystem",
+      path: "ecosystem"
+    },
+    {
+      label: "Roadmap",
+      path: "roadmap"
+    },
+    {
+      label: "How Borrowing Works",
+      path: "features"
+    },
+    {
+      label: "Lending Pool",
+      path: "https://miniappv2.magnify.cash/lending",
+      external: true
+    },
+    {
+      label: "$MAG",
+      path: "https://www.coingecko.com/en/coins/magnify-cash",
+      external: true
+    }
+  ];
 
   const logoUrl = getPublicImageUrl('mc-square-logo.png');
   
