@@ -9,66 +9,13 @@ export type Json =
 export type Database = {
   public: {
     Tables: {
-      content_audit_log: {
-        Row: {
-          changed_at: string
-          changed_by_user_id: string | null
-          content_after: Json
-          content_before: Json | null
-          id: string
-          section: string
-        }
-        Insert: {
-          changed_at?: string
-          changed_by_user_id?: string | null
-          content_after: Json
-          content_before?: Json | null
-          id?: string
-          section: string
-        }
-        Update: {
-          changed_at?: string
-          changed_by_user_id?: string | null
-          content_after?: Json
-          content_before?: Json | null
-          id?: string
-          section?: string
-        }
-        Relationships: []
-      }
-      website_content: {
-        Row: {
-          content: Json
-          created_at: string
-          id: string
-          section: string
-          updated_at: string
-        }
-        Insert: {
-          content: Json
-          created_at?: string
-          id?: string
-          section: string
-          updated_at?: string
-        }
-        Update: {
-          content?: Json
-          created_at?: string
-          id?: string
-          section?: string
-          updated_at?: string
-        }
-        Relationships: []
-      }
+      [_ in never]: never
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      upsert_website_content: {
-        Args: { p_section: string; p_content: Json; p_user_id?: string }
-        Returns: string
-      }
+      [_ in never]: never
     }
     Enums: {
       [_ in never]: never
