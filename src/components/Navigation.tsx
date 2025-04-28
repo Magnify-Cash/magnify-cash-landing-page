@@ -70,7 +70,7 @@ const Navigation = () => {
     external: true
   }];
 
-  const logoUrl = getPublicImageUrl('logo.png');
+  const logoUrl = getPublicImageUrl('mc-square-logo.png');
   
   return <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
