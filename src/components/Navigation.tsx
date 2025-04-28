@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronUp } from "lucide-react";
 import { useState, useEffect } from "react";
+import { getPublicImageUrl } from "@/lib/storage";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,7 +70,7 @@ const Navigation = () => {
     external: true
   }];
 
-  const logoPath = "/lovable-uploads/094313f1-3850-4a92-b448-cbd2d4321169.png";
+  const logoUrl = getPublicImageUrl('logo.png');
   
   return <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
@@ -78,7 +79,7 @@ const Navigation = () => {
             <img 
               alt="Magnify Cash Logo" 
               className={`h-8 w-8 sm:h-10 sm:w-10 rounded-[20%] ${logoError ? 'hidden' : ''}`}
-              src={logoPath}
+              src={logoUrl}
               onError={(e) => {
                 console.error('Logo failed to load:', e);
                 setLogoError(true);
