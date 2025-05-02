@@ -48,7 +48,7 @@ const Hero = () => {
               { value: "7.7K+", label: "ORB Verified Users" },
               { value: "5.8M+", label: "Total Impressions" },
               { value: "1.5K+", label: "Issued Loans" },
-              { value: "$10.1K+", label: "Total Volume" },
+              { value: "$20.1K+", label: "Total Volume" },
             ].map((metric, index) => (
               <div 
                 key={index} 
