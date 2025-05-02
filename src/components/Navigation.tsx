@@ -87,7 +87,7 @@ const Navigation = () => {
               <div className="bg-white rounded-sm transform -rotate-45 flex items-center justify-center">
                 <img 
                   alt="Magnify Cash Logo" 
-                  className={`h-8 w-8 sm:h-10 sm:w-10 transform -rotate-0 scale-90 transition-transform group-hover:scale-100 ${logoError ? 'hidden' : ''}`}
+                  className="h-8 w-8 sm:h-10 sm:w-10 transform -rotate-0 scale-90 transition-transform group-hover:scale-100"
                   src={logoUrl}
                   onError={(e) => {
                     console.error('Logo failed to load:', e);
@@ -104,14 +104,14 @@ const Navigation = () => {
             <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Magnify Cash</span>
           </Link>
           
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
+          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
             {navigationItems.map(item => item.external ? 
               <a 
                 key={item.label} 
                 href={item.path} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="px-3 py-2 text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg hover-lift"
+                className="px-2 py-2 text-secondary hover:text-primary transition-colors relative group cursor-pointer text-sm lg:text-base hover-lift"
               >
                 <span className="relative z-10">{item.label}</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all duration-300 group-hover:w-full" />
@@ -120,7 +120,7 @@ const Navigation = () => {
               <button 
                 key={item.label} 
                 onClick={() => scrollToSection(item.path)} 
-                className={`px-3 py-2 text-lg transition-all relative group cursor-pointer hover-lift ${activeSection === item.path ? 'font-medium' : ''}`}
+                className={`px-2 py-2 text-sm lg:text-base transition-all relative group cursor-pointer hover-lift ${activeSection === item.path ? 'font-medium' : ''}`}
               >
                 <span className={`relative z-10 ${activeSection === item.path ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent' : 'text-secondary hover:text-primary'}`}>{item.label}</span>
                 <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all duration-300 ${activeSection === item.path ? 'w-full' : 'w-0 group-hover:w-full'}`} />
@@ -135,7 +135,7 @@ const Navigation = () => {
               rel="noopener noreferrer" 
               className="hidden sm:block"
             >
-              <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-all hover:scale-105 px-6 py-5 text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl rounded-full">
+              <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-all hover:scale-105 px-4 py-5 text-base font-semibold shadow-lg hover:shadow-xl rounded-full">
                 Access Lending Pool
               </Button>
             </a>
