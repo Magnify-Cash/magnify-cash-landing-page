@@ -30,7 +30,7 @@ const Hero = () => {
               </span>
               <br className="hidden sm:block" />
               <span className="inline-block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mt-4 sm:mt-6">
-                Zero Gas, Total Control
+                Get a loan just by being you
               </span>
             </h1>
           </div>
