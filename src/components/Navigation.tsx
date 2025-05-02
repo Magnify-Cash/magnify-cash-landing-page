@@ -82,8 +82,8 @@ const Navigation = () => {
   
   return <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-90 transition-all group">
+        <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
+          <Link to="/" className="flex items-center space-x-4 hover:opacity-90 transition-all group">
             <div className="flex items-center justify-center">
               <img 
                 alt="Magnify Cash Logo" 
@@ -97,17 +97,17 @@ const Navigation = () => {
                 </div>
               )}
             </div>
-            <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Magnify Cash</span>
+            <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent whitespace-nowrap">Magnify Cash</span>
           </Link>
           
-          <div className="hidden md:flex items-center space-x-4 lg:space-x-6">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navigationItems.map(item => item.external ? 
               <a 
                 key={item.label} 
                 href={item.path} 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="px-2 py-2 text-secondary hover:text-primary transition-colors relative group cursor-pointer text-sm lg:text-base hover-lift"
+                className="px-3 py-2 text-secondary hover:text-primary transition-colors relative group cursor-pointer text-sm lg:text-base hover-lift"
               >
                 <span className="relative z-10">{item.label}</span>
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all duration-300 group-hover:w-full" />
@@ -116,7 +116,7 @@ const Navigation = () => {
               <button 
                 key={item.label} 
                 onClick={() => scrollToSection(item.path)} 
-                className={`px-2 py-2 text-sm lg:text-base transition-all relative group cursor-pointer hover-lift ${activeSection === item.path ? 'font-medium' : ''}`}
+                className={`px-3 py-2 text-sm lg:text-base transition-all relative group cursor-pointer hover-lift ${activeSection === item.path ? 'font-medium' : ''}`}
               >
                 <span className={`relative z-10 ${activeSection === item.path ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent' : 'text-secondary hover:text-primary'}`}>{item.label}</span>
                 <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all duration-300 ${activeSection === item.path ? 'w-full' : 'w-0 group-hover:w-full'}`} />
