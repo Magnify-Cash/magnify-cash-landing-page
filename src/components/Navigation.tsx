@@ -87,12 +87,12 @@ const Navigation = () => {
             <div className="flex items-center justify-center">
               <img 
                 alt="Magnify Cash Logo" 
-                className="h-8 w-8 sm:h-10 sm:w-10 transition-transform group-hover:scale-105"
+                className="h-8 w-8 sm:h-10 sm:w-10 transition-transform group-hover:scale-105 rounded-[10%]"
                 src={logoUrl}
                 onError={() => setLogoError(true)}
               />
               {logoError && (
-                <div className="h-8 w-8 sm:h-10 sm:w-10 bg-gradient-to-r from-blue-600 to-pink-600 flex items-center justify-center rounded-sm">
+                <div className="h-8 w-8 sm:h-10 sm:w-10 bg-gradient-to-r from-blue-600 to-pink-600 flex items-center justify-center rounded-[10%]">
                   <span className="text-white font-bold">MC</span>
                 </div>
               )}
