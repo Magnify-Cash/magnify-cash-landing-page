@@ -1,3 +1,4 @@
+
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronUp } from "lucide-react";
@@ -81,25 +82,29 @@ const Navigation = () => {
   return <>
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity hover-lift">
-            <img 
-              alt="Magnify Cash Logo" 
-              className={`h-8 w-8 sm:h-10 sm:w-10 rounded-[20%] ${logoError ? 'hidden' : ''}`}
-              src={logoUrl}
-              onError={(e) => {
-                console.error('Logo failed to load:', e);
-                setLogoError(true);
-              }}
-            />
-            {logoError && (
-              <div className="h-8 w-8 sm:h-10 sm:w-10 bg-gray-200 rounded-[20%] flex items-center justify-center">
-                MC
+          <Link to="/" className="flex items-center space-x-3 hover:opacity-90 transition-all group">
+            <div className="relative overflow-hidden transform rotate-45 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 p-0.5 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
+              <div className="bg-white rounded-sm transform -rotate-45 flex items-center justify-center">
+                <img 
+                  alt="Magnify Cash Logo" 
+                  className={`h-8 w-8 sm:h-10 sm:w-10 transform -rotate-0 scale-90 transition-transform group-hover:scale-100 ${logoError ? 'hidden' : ''}`}
+                  src={logoUrl}
+                  onError={(e) => {
+                    console.error('Logo failed to load:', e);
+                    setLogoError(true);
+                  }}
+                />
+                {logoError && (
+                  <div className="h-8 w-8 sm:h-10 sm:w-10 bg-gradient-to-r from-blue-600 to-pink-600 flex items-center justify-center rounded-sm">
+                    <span className="text-white font-bold transform -rotate-45">MC</span>
+                  </div>
+                )}
               </div>
-            )}
-            <span className="text-xl sm:text-2xl font-semibold">Magnify Cash</span>
+            </div>
+            <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Magnify Cash</span>
           </Link>
           
-          <div className="hidden md:flex items-center space-x-8 lg:space-x-12">
+          <div className="hidden md:flex items-center space-x-8 lg:space-x-10">
             {navigationItems.map(item => item.external ? 
               <a 
                 key={item.label} 
@@ -108,17 +113,17 @@ const Navigation = () => {
                 rel="noopener noreferrer" 
                 className="px-3 py-2 text-secondary hover:text-primary transition-colors relative group cursor-pointer text-lg hover-lift"
               >
-                {item.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all group-hover:w-full" />
+                <span className="relative z-10">{item.label}</span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all duration-300 group-hover:w-full" />
               </a> 
               : 
               <button 
                 key={item.label} 
                 onClick={() => scrollToSection(item.path)} 
-                className={`px-3 py-2 text-lg transition-colors relative group cursor-pointer hover-lift ${activeSection === item.path ? 'text-primary font-medium' : 'text-secondary hover:text-primary'}`}
+                className={`px-3 py-2 text-lg transition-all relative group cursor-pointer hover-lift ${activeSection === item.path ? 'font-medium' : ''}`}
               >
-                {item.label}
-                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all ${activeSection === item.path ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                <span className={`relative z-10 ${activeSection === item.path ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent' : 'text-secondary hover:text-primary'}`}>{item.label}</span>
+                <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-600 to-pink-600 transition-all duration-300 ${activeSection === item.path ? 'w-full' : 'w-0 group-hover:w-full'}`} />
               </button>
             )}
           </div>
@@ -130,7 +135,7 @@ const Navigation = () => {
               rel="noopener noreferrer" 
               className="hidden sm:block"
             >
-              <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity hover:scale-105 px-6 py-5 text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl">
+              <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-all hover:scale-105 px-6 py-5 text-base sm:text-lg font-semibold shadow-lg hover:shadow-xl rounded-full">
                 Access Lending Pool
               </Button>
             </a>
@@ -153,7 +158,7 @@ const Navigation = () => {
                 rel="noopener noreferrer" 
                 className="block py-2 text-secondary hover:text-primary transition-colors hover-lift"
               >
-                {item.label}
+                <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">{item.label}</span>
               </a> 
               : 
               <button 
@@ -161,7 +166,7 @@ const Navigation = () => {
                 onClick={() => scrollToSection(item.path)} 
                 className={`block w-full text-left py-2 transition-colors hover-lift ${activeSection === item.path ? 'text-primary font-medium' : 'text-secondary hover:text-primary'}`}
               >
-                {item.label}
+                <span className={activeSection === item.path ? 'bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent' : ''}>{item.label}</span>
               </button>
             )}
             <a 
@@ -170,7 +175,7 @@ const Navigation = () => {
               rel="noopener noreferrer" 
               className="block pt-4"
             >
-              <Button className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-opacity px-6 py-5 text-base font-semibold shadow-lg hover:shadow-xl">
+              <Button className="w-full bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-all px-6 py-5 text-base font-semibold shadow-lg hover:shadow-xl rounded-full">
                 Access Lending Pool
               </Button>
             </a>
