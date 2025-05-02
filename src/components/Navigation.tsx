@@ -1,8 +1,8 @@
-
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronUp } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Image } from "./ui/image";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -83,23 +83,18 @@ const Navigation = () => {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 hover:opacity-90 transition-all group">
-            <div className="relative overflow-hidden transform rotate-45 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 p-0.5 rounded-lg shadow-lg group-hover:shadow-xl transition-all duration-300">
-              <div className="bg-white rounded-sm transform -rotate-45 flex items-center justify-center">
-                <img 
-                  alt="Magnify Cash Logo" 
-                  className="h-8 w-8 sm:h-10 sm:w-10 transform -rotate-0 scale-90 transition-transform group-hover:scale-100"
-                  src={logoUrl}
-                  onError={(e) => {
-                    console.error('Logo failed to load:', e);
-                    setLogoError(true);
-                  }}
-                />
-                {logoError && (
-                  <div className="h-8 w-8 sm:h-10 sm:w-10 bg-gradient-to-r from-blue-600 to-pink-600 flex items-center justify-center rounded-sm">
-                    <span className="text-white font-bold transform -rotate-45">MC</span>
-                  </div>
-                )}
-              </div>
+            <div className="flex items-center justify-center">
+              <img 
+                alt="Magnify Cash Logo" 
+                className="h-8 w-8 sm:h-10 sm:w-10 transition-transform group-hover:scale-105"
+                src={logoUrl}
+                onError={() => setLogoError(true)}
+              />
+              {logoError && (
+                <div className="h-8 w-8 sm:h-10 sm:w-10 bg-gradient-to-r from-blue-600 to-pink-600 flex items-center justify-center rounded-sm">
+                  <span className="text-white font-bold">MC</span>
+                </div>
+              )}
             </div>
             <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Magnify Cash</span>
           </Link>
