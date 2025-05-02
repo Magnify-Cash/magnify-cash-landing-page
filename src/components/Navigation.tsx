@@ -1,3 +1,4 @@
+
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronUp } from "lucide-react";
@@ -124,16 +125,17 @@ const Navigation = () => {
           </div>
 
           <div className="flex items-center space-x-6">
-            <a 
-              href="https://miniappv2.magnify.cash/lending" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="hidden sm:block"
-            >
-              <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-all hover:scale-105 px-4 py-5 text-base font-semibold shadow-lg hover:shadow-xl rounded-full">
-                Access Lending Pool
-              </Button>
-            </a>
+            <div className="hidden sm:block ml-6">
+              <a 
+                href="https://miniappv2.magnify.cash/lending" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <Button className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white hover:opacity-90 transition-all hover:scale-105 px-4 py-5 text-base font-semibold shadow-lg hover:shadow-xl rounded-full">
+                  Access Lending Pool
+                </Button>
+              </a>
+            </div>
             
             <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden p-2 hover:bg-gray-100 rounded-full transition-colors" aria-label="Toggle menu">
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
