@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-20 sm:py-28 lg:py-36">
+    <section className="relative overflow-hidden px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50/80 via-purple-50/80 to-pink-50/80 opacity-60 animate-gradient" />
       <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]" />
       
@@ -67,7 +67,7 @@ const Hero = () => {
               href="https://miniappv2.magnify.cash/lending"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-10 py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-full font-semibold transition-all text-center flex items-center justify-center gap-3 text-lg shadow-lg hover:shadow-xl hover:-translate-y-1 group"
+              className="w-full sm:w-80 px-12 py-5 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 text-white rounded-full font-semibold transition-all text-center flex items-center justify-center gap-3 text-lg shadow-lg hover:shadow-xl hover:-translate-y-1 group whitespace-nowrap"
             >
               Become a Micro-lender
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -77,7 +77,7 @@ const Hero = () => {
               href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto px-10 py-5 bg-white/80 backdrop-blur-sm text-gray-700 rounded-full font-semibold transition-all text-lg hover:bg-white relative group overflow-hidden border border-gray-200 hover:border-blue-300 shadow-md hover:shadow-lg hover:-translate-y-1 flex items-center justify-center"
+              className="w-full sm:w-80 px-12 py-5 bg-white/80 backdrop-blur-sm text-gray-700 rounded-full font-semibold transition-all text-lg hover:bg-white relative group overflow-hidden border border-gray-200 hover:border-blue-300 shadow-md hover:shadow-lg hover:-translate-y-1 flex items-center justify-center whitespace-nowrap"
             >
               <span className="relative z-10 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Get a Micro-loan</span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-pink-600 opacity-0 group-hover:opacity-5 transition-opacity" />
