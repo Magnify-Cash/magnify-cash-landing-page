@@ -1,3 +1,4 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Coins, Wallet, PiggyBank, Bot } from "lucide-react";
 
@@ -30,9 +31,12 @@ const Ecosystem = () => {
     {
       title: "Shared Lending Pool",
       description: "Earn yield by providing liquidity to micro-loans backed by World ID",
-      icon: <PiggyBank className="w-8 h-8 text-gray-400" />,
-      disabled: true,
-      comingSoon: true
+      icon: <PiggyBank className="w-8 h-8 text-purple-500" />,
+      cta: {
+        text: "Access Lending Pool →",
+        href: "https://miniappv2.magnify.cash/lending",
+      },
+      disabled: false
     },
     {
       title: "AI Risk Assessment",

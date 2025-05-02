@@ -1,18 +1,20 @@
+
 const CallToAction = () => {
   return (
-    <section className="py-16 sm:py-24 bg-black text-white px-4 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-7xl text-center">
-        <h2 className="text-2xl sm:text-4xl font-bold mb-6 animate-fade-in leading-tight text-white">
-          Be part of a revolutionary platform that's making financial inclusion a reality for billions worldwide.
+    <section className="py-16 sm:py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <div className="absolute inset-0 bg-[url('/grid.svg')] bg-center opacity-20" />
+      <div className="mx-auto max-w-7xl text-center relative">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 animate-fade-in leading-tight text-white max-w-3xl mx-auto">
+          Join Magnify V3's Shared Lending Pool and Start Earning Up to 20% APY Today
         </h2>
         <div className="flex flex-col gap-4 animate-fade-in [animation-delay:200ms] max-w-md mx-auto">
           <a 
-            href="https://worldcoin.org/ecosystem/app_cfd0a40d70419e3675be53a0aa9b7e10" 
+            href="https://miniappv2.magnify.cash/lending" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="w-full px-6 py-4 bg-gradient-to-r from-[#4F6AF6] to-pink-500 text-white rounded-full font-semibold hover:opacity-90 transition-all text-lg"
+            className="w-full px-6 py-4 bg-gradient-to-r from-[#4F6AF6] to-[#D946EF] text-white rounded-full font-semibold hover:opacity-90 transition-all text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5"
           >
-            Get started
+            Access Shared Lending Pool
           </a>
           <a 
             href="https://discord.gg/magnifycash" 
@@ -32,7 +34,7 @@ const CallToAction = () => {
             />
             <button 
               type="submit" 
-              className="px-8 py-4 bg-gradient-to-r from-[#4F6AF6] to-pink-500 text-white rounded-full hover:opacity-90 transition-opacity font-semibold whitespace-nowrap"
+              className="px-8 py-4 bg-gradient-to-r from-[#4F6AF6] to-[#D946EF] text-white rounded-full hover:opacity-90 transition-opacity font-semibold whitespace-nowrap shadow-lg hover:shadow-xl"
             >
               Subscribe
             </button>
