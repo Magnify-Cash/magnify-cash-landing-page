@@ -84,15 +84,15 @@ const Navigation = () => {
       <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-xl shadow-sm' : 'bg-transparent'}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 h-20 flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-4 hover:opacity-90 transition-all group">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center h-10 w-10 sm:h-12 sm:w-12">
               <img 
                 alt="Magnify Cash Logo" 
-                className="h-8 w-8 sm:h-10 sm:w-10 transition-transform group-hover:scale-105 rounded-[10%]"
+                className="h-full w-full object-contain transition-transform group-hover:scale-105 rounded-[10%]"
                 src={logoUrl}
                 onError={() => setLogoError(true)}
               />
               {logoError && (
-                <div className="h-8 w-8 sm:h-10 sm:w-10 bg-gradient-to-r from-blue-600 to-pink-600 flex items-center justify-center rounded-[10%]">
+                <div className="h-full w-full bg-gradient-to-r from-blue-600 to-pink-600 flex items-center justify-center rounded-[10%]">
                   <span className="text-white font-bold">MC</span>
                 </div>
               )}
